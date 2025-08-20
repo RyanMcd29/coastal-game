@@ -7,17 +7,17 @@
           "text":"You are a coastal planner facing rising sea levels. Choose your first action to protect the community.",
           "options": [
             {
-              "option":"Build a seawall to defend against storm surges",
+              "desc":"Build a seawall to defend against storm surges",
               "target": "a",
               "points": 3
             },
             {
-              "option":"Restore mangroves to absorb wave energy",
+              "desc":"Restore mangroves to absorb wave energy",
               "target": "b",
               "points": 2
             },
             {
-              "option": "Relocate houses further inland",
+              "desc": "Relocate houses further inland",
               "target": "c",
               "points": 1
             }
@@ -31,17 +31,17 @@
           "text":"You chose to build a seawall. Decide how to improve or maintain your seawall strategy.",
           "options": [
             {
-              "option":"Invest in stronger, more durable materials",
+              "desc":"Invest in stronger, more durable materials",
               "target": "a",
               "points": 3
             },
             {
-              "option":"Add natural buffers alongside the wall",
+              "desc":"Add natural buffers alongside the wall",
               "target": "b",
               "points": 2
             },
             {
-              "option": "Cut costs with cheaper materials",
+              "desc": "Cut costs with cheaper materials",
               "target": "c",
               "points": 1
             }
@@ -52,17 +52,17 @@
           "text":"You chose to restore mangroves. Decide how to manage the restoration project.",
           "options": [
             {
-              "option":"Plant diverse native mangrove species",
+              "desc":"Plant diverse native mangrove species",
               "target": "a",
               "points": 3
             },
             {
-              "option":"Focus on fast-growing species for quick results",
+              "desc":"Focus on fast-growing species for quick results",
               "target": "b",
               "points": 2
             },
             {
-              "option": "Limit restoration to small areas to save budget",
+              "desc": "Limit restoration to small areas to save budget",
               "target": "c",
               "points": 1
             }
@@ -73,17 +73,17 @@
           "text":"You chose to relocate houses inland. Decide how to support the community during relocation.",
           "options": [
             {
-              "option":"Provide financial incentives and new infrastructure",
+              "desc":"Provide financial incentives and new infrastructure",
               "target": "a",
               "points": 3
             },
             {
-              "option":"Offer temporary housing and job training",
+              "desc":"Offer temporary housing and job training",
               "target": "b",
               "points": 2
             },
             {
-              "option": "Relocate only the most vulnerable families",
+              "desc": "Relocate only the most vulnerable families",
               "target": "c",
               "points": 1
             }
