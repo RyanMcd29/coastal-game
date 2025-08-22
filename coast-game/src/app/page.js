@@ -7,10 +7,16 @@ import { useState } from 'react';
 export default function Home() {
   const [page, setPage] = useState('start');
   return (
-    <div className="card w-full max-w-md">
-      {page === 'start' && <Start setPage={setPage} />}
-      {page === 'game' && <Game setPage={setPage} />}
-      {page === 'leaderboard' && <Leaderboard setPage={setPage} />}
+    <div className="page-container">
+      {page === 'start' &&
+        <Start setPage={setPage} />
+      }
+      {page === 'game' && (
+        <Game setPage={setPage} />
+      )}
+      {page === 'leaderboard' && (
+        <Leaderboard setPage={setPage} />
+      )}
     </div>
   );
 }

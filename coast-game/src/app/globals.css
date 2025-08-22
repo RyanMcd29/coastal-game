@@ -3,9 +3,9 @@
 :root {
   --background: #e0f7fa;
   --foreground: #023e8a;
-  --ocean-light: #caf0f8;
+  --ocean-light: #90e0ef;
   --ocean: #00b4d8;
-  --ocean-dark: #03045e;
+  --ocean-dark: #0077b6;
 }
 
 @theme inline {
@@ -49,27 +49,15 @@ body {
   }
 
   .btn {
-    @apply rounded px-4 py-2 text-white transition-colors;
+    @apply rounded px-4 py-2 text-white;
   }
 
   .btn-primary {
-    background-color: var(--ocean);
-  }
-
-  .btn-primary:hover {
-    background-color: var(--ocean-dark);
+    @apply bg-blue-600 hover:bg-blue-700;
   }
 
   .btn-secondary {
-    background-color: var(--ocean-dark);
-  }
-
-  .btn-secondary:hover {
-    background-color: var(--ocean);
-  }
-
-  .card {
-    @apply rounded-xl bg-white/80 backdrop-blur-md p-8 shadow-lg;
+    @apply bg-gray-600 hover:bg-gray-700;
   }
 }
 
