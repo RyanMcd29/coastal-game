@@ -10,13 +10,13 @@ export default function Game({ setPage }) {
     const scenario = scenarios.layers[path.length]?.[path]
 
     return (
-        <div className="flex flex-col items-center gap-6">
-            {scenario ? 
+        <div className="stack">
+            {scenario ?
                 <Scenario scenario={scenario} path={path} setPath={setPath}/> :
                 <GameEnd path={path} setPage={setPage}/>
             }
             <button
-                className="rounded bg-gray-600 px-4 py-2 text-white hover:bg-gray-700"
+                className="btn btn-secondary"
                 onClick={() => setPage('start')}
             >
                 Back to Start
