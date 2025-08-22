@@ -1,14 +1,21 @@
-import ScenBtn from "./scenBtn"
+import ScenBtn from "./scenBtn";
 
-export default function Scenario({scenarios, path, setPath}) {
-    console.log('path', path)
-    const scenario = scenarios.layers[path.length][path]
+export default function Scenario({ scenarios, path, setPath }) {
+    console.log('path', path);
+    const scenario = scenarios.layers[path.length][path];
     return (
-        <div>
-            <em>{scenario.text}</em>
-            {scenario.options.map((decision, i) => (
-                <ScenBtn key={i} decision={decision} path={path} setPath={setPath} />
-            ))}
+        <div className="flex flex-col items-center gap-4">
+            <em className="text-center text-lg">{scenario.text}</em>
+            <div className="flex flex-col items-center gap-2">
+                {scenario.options.map((decision, i) => (
+                    <ScenBtn
+                        key={i}
+                        decision={decision}
+                        path={path}
+                        setPath={setPath}
+                    />
+                ))}
+            </div>
         </div>
-    )
+    );
 }
