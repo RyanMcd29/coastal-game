@@ -12,13 +12,13 @@ export default function Leaderboard({ setPage }) {
     })
 
     return (
-        <div className="flex flex-col items-center gap-6">
+        <div className="stack">
             <h1 className="text-2xl font-bold">Leaderboard</h1>
             {sorted.map((item, i)=>
                 <p key={i}>{item.name}: {item.points}</p>
             )}
             <button
-                className="rounded bg-gray-600 px-4 py-2 text-white hover:bg-gray-700"
+                className="btn btn-secondary"
                 onClick={() => setPage('start')}
             >
                 Back to Start
