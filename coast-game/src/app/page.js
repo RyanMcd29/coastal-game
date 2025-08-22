@@ -7,8 +7,8 @@ import { useState } from 'react';
 export default function Home() {
   const [page, setPage] = useState('start');
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-8 p-8">
-      {page === 'start' && 
+    <div className="page-container">
+      {page === 'start' &&
         <Start setPage={setPage} />
       }
       {page === 'game' && (
