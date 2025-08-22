@@ -20,7 +20,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased wave-bg`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased wave-bg flex min-h-screen items-center justify-center`}
+
       >
         {children}
       </body>
