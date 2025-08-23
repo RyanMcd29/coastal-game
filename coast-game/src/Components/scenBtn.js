@@ -1,12 +1,12 @@
-export default function scenBtn ({option, path, setPath}) {
+export default function ScenBtn({ option, path, setPath }) {
     return (
         <button
-            className="text-left text-black hover:text-cyan-400 w-4/5 "
-            onClick={()=>{
-                setPath(path + option.target)
+            className="btn btn-primary text-left w-4/5"
+            onClick={() => {
+                setPath(path + option.target);
             }}
         >
             {option.desc}
         </button>
-    )
+    );
 }
