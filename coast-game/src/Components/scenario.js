@@ -17,13 +17,13 @@ export default function Scenario({scenario, path, setPath, setPage}) {
     return (
         <div className="flex flex-wrap w-full flex-auto">
             <Image 
-                className="mx-auto image-fit md:w-2/5  sm:w-full aspect-square object-cover border-4 border-black" 
+                className="mx-auto w-2/5 max-sm:48 image-fit aspect-square object-cover border-4 border-black" 
                 src={scenario.image} 
                 alt="scenario image" 
                 width={500} 
                 height={500}
             />
-            <div className="mx-auto md:w-3/5 sm:w-full bg-white p-8 border-4 border-black">
+            <div className="mx-auto w-3/5 max-sm:w-full bg-white p-8 border-4 border-black">
                 <p key={animKey} className="text-black text-center text-lg block">
                     {letters.map((char, i) => (
                         <span
