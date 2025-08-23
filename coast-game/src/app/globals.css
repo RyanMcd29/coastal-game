@@ -26,9 +26,14 @@
 }
 
 body {
-  background: var(--background);
+  background: url('/town.gif');
+  background-size: cover;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.pixel-ui {
+  font-family: 'Johto Mono', monospace;
 }
 
 @layer components {
@@ -80,10 +85,15 @@ body {
     }
   }
 
-  .wave-bg {
+  @font-face {
+    font-family: 'Johto Mono';
+    src: url('/fonts/JohtoMono.ttf') format('truetype');
+  }
+
+  /* .wave-bg {
     background-image: url("/wave.svg");
     background-repeat: repeat-x;
     background-size: 1000px 100%;
     animation: wave 15s linear infinite;
-  }
+  } */
 }
