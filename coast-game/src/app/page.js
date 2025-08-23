@@ -7,7 +7,7 @@ import { useState } from 'react';
 export default function Home() {
   const [page, setPage] = useState('start');
   return (
-    <div className="page-container pixel-ui">
+    <div className="page-container pixel-ui mx-auto">
       {page === 'start' &&
         <Start setPage={setPage} />
       }
