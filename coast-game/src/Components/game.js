@@ -10,7 +10,7 @@ export default function Game({ setPage }) {
     const scenario = scenarios.layers[path.length]?.[path]
 
     return (
-        <div className="stack">
+        <div className="stack p-6 m-2 m-black">
             {scenario ?
                 <Scenario scenario={scenario} path={path} setPath={setPath}/> :
                 <GameEnd path={path} setPage={setPage}/>

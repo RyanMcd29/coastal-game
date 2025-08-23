@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ScenBtn from "./scenBtn";
+import Image from "next/image";
 
 export default function Scenario({scenario, path, setPath, setPage}) {
     const [showOptions, setShowOptions] = useState(false);
@@ -14,25 +15,34 @@ export default function Scenario({scenario, path, setPath, setPage}) {
     }, [scenario.text]);
 
     return (
-        <div className="stack-sm">
-            <p key={animKey} className="text-center text-lg block">
-                {letters.map((char, i) => (
-                    <span
-                        key={i}
-                        className="opacity-0"
-                        style={{
-                            animation: "fade-in 0.1s forwards",
-                            animationDelay: `${i * 20}ms`,
-                        }}
-                    >
-                        {char}
-                    </span>
-                ))}
-            </p>
-            <div className={`stack-xs transition-opacity duration-500 ${showOptions ? "opacity-100" : "opacity-0"}`}>
-                {scenario.options?.map((option, i) => (
-                    <ScenBtn key={i} option={option} path={path} setPath={setPath} />
-                ))}
+        <div className="flex flex-wrap flex-auto">
+            <Image 
+                className="mx-auto image-fit aspect-square object-cover border-4 border-black" 
+                src={scenario.image} 
+                alt="scenario image" 
+                width={300} 
+                height={300}
+            />
+            <div className="mx-auto w-lg bg-white p-8 border-4 border-black">
+                <p key={animKey} className="text-black text-center text-lg block">
+                    {letters.map((char, i) => (
+                        <span
+                            key={i}
+                            className="opacity-0"
+                            style={{
+                                animation: "fade-in 0.1s forwards",
+                                animationDelay: `${i * 20}ms`,
+                            }}
+                        >
+                            {char}
+                        </span>
+                    ))}
+                </p>
+                <div className={`stack-xs pt-8 transition-opacity duration-500 ${showOptions ? "opacity-100" : "opacity-0"}`}>
+                    {scenario.options?.map((option, i) => (
+                        <ScenBtn key={i} option={option} path={path} setPath={setPath} />
+                    ))}
+                </div>
             </div>
         </div>
     )

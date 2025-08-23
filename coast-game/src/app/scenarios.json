@@ -4,6 +4,7 @@
       "0":
       {
         "":{
+          "image": "dolphin.png",
           "text":"You are a coastal planner facing rising sea levels. Choose your first action to protect the community.",
           "options": [
             {
