@@ -17,9 +17,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <html lang="en">
       <body
+        style={{ backgroundImage: `url(${basePath}/town.gif)` }}
         className={`${geistSans.variable} ${geistMono.variable} antialiased wave-bg`}
       >
         {children}
