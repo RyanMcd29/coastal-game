@@ -9,6 +9,9 @@ const config = {
   images: { unoptimized: true },        // GH Pages: no image optimizer
   basePath,                             // serve under /coastal-game
   assetPrefix: basePath + '/',          // asset URLs under /coastal-game
+  env: {                                // expose basePath to client code
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 }
 
 export default config

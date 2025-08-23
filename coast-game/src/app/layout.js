@@ -1,14 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Press_Start_2P } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const pressStart2P = Press_Start_2P({
+  weight: "400",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-press-start",
 });
 
 export const metadata = {
@@ -17,10 +13,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
-    <html lang="en">
+    <html lang="en" className={pressStart2P.variable}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased wave-bg`}
+        style={{ backgroundImage: `url(${basePath}/town.gif)` }}
+        className="antialiased wave-bg"
       >
         {children}
       </body>
