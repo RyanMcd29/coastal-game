@@ -15,16 +15,17 @@ export default function Scenario({scenario, path, setPath, setPage}) {
     }, [scenario.text]);
 
     return (
-        <div className="flex flex-wrap w-full flex-auto">
+        <div className="flex flex-wrap w-full border-4 border-black bg-white flex-auto whitespace-pre-line
+text-xs">
             <Image 
-                className="mx-auto w-2/5 max-sm:48 image-fit aspect-square object-cover border-4 border-black" 
+                className="mx-auto w-2/5 max-sm:48 image-fit aspect-square object-cover" 
                 src={scenario.image} 
                 alt="scenario image" 
-                width={500} 
-                height={500}
+                width={1000} 
+                height={1000}
             />
-            <div className="mx-auto w-3/5 max-sm:w-full bg-white p-8 border-4 border-black">
-                <p key={animKey} className="text-black text-center text-lg block">
+            <div className="mx-auto w-3/5 max-sm:w-full bg-white p-8">
+                <p key={animKey} style={{"border-bottom": "solid"}} className="text-black text-center p-4 pb-2">
                     {letters.map((char, i) => (
                         <span
                             key={i}
@@ -38,10 +39,13 @@ export default function Scenario({scenario, path, setPath, setPage}) {
                         </span>
                     ))}
                 </p>
-                <div className={`stack-xs pt-8 transition-opacity duration-500 ${showOptions ? "opacity-100" : "opacity-0"}`}>
-                    {scenario.options?.map((option, i) => (
-                        <ScenBtn key={i} option={option} path={path} setPath={setPath} />
-                    ))}
+                <div className={`stack-xs text-black pt-8 transition-opacity duration-500 ${showOptions ? "opacity-100" : "opacity-0"}`}>
+                    {(() => {
+                        const shuffledOptions = [...(scenario.options || [])].sort(() => Math.random() - 0.5);
+                        return shuffledOptions.map((option, i) => (
+                            <ScenBtn key={i} option={option} path={path} setPath={setPath} />
+                        ));
+                    })()}
                 </div>
             </div>
         </div>

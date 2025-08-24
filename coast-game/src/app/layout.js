@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={pressStart2P.variable}>
       <body
-        style={{ backgroundImage: `url(${basePath}/town.gif)` }}
+        style={{ backgroundImage: `url(${basePath}/town.mp4)` }}
         className="antialiased wave-bg"
       >
         {children}

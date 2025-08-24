@@ -12,11 +12,13 @@ export default function Leaderboard({ setPage }) {
     })
 
     return (
-        <div className="stack">
-            <h1 className="text-2xl font-bold">Leaderboard</h1>
-            {sorted.map((item, i)=>
-                <p key={i}>{item.name}: {item.points}</p>
-            )}
+        <div className="stack bg-white p-8 border-4 border-black w-3/5 max-sm:w-full">
+            <h1 className="text-2xl font-bold text-center">Leaderboard</h1>
+            {sorted.map((item, i) => (
+                <p key={i} className="text-black">
+                    {item.name}: {item.points}
+                </p>
+            ))}
             <button
                 className="btn btn-secondary"
                 onClick={() => setPage('start')}
