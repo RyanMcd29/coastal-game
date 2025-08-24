@@ -16,10 +16,16 @@ export default function RootLayout({ children }) {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <html lang="en" className={pressStart2P.variable}>
-      <body
-        style={{ backgroundImage: `url(${basePath}/town.mp4)` }}
-        className="antialiased wave-bg"
-      >
+      <body className="antialiased">
+        <video
+          className="fixed inset-0 -z-10 h-full w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src={`${basePath}/town.mp4`} type="video/mp4" />
+        </video>
         {children}
       </body>
     </html>
