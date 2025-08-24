@@ -1,95 +1,195 @@
 {
-  "layers":
-    {
-      "0":
-      {
-        "":{
-          "image": "dolphin.png",
-          "text":"You are a coastal planner facing rising sea levels. Choose your first action to protect the community.",
-          "options": [
-            {
-              "desc":"Build a seawall to defend against storm surges",
-              "target": "a",
-              "points": 3
-            },
-            {
-              "desc":"Restore mangroves to absorb wave energy",
-              "target": "b",
-              "points": 2
-            },
-            {
-              "desc": "Relocate houses further inland",
-              "target": "c",
-              "points": 1
-            }
-          ]
-        }
+  "layers": {
+    "0": {
+      "": {
+        "image": "dolphin.",
+        "text": "Rising sea levels are threatening a small fishing town. The community has asked you, a Marine Scientist, to guide them in protecting both their livelihoods and their coastline.\n\nSome locals see opportunity in tourism and want to restore the beaches and build hotels near the ocean. Others are concerned about overfishing and the health of local ecosystems.\n\nFunding is limited, so the town must choose carefully. What will your first step be?",
+        "options": [
+          { "desc": "Conduct a survey of the local ecosystems and beaches to understand the current conditions before making decisions.", "target": "a" },
+          { "desc": "Launch a program to restore fish populations and reduce the impacts of overfishing.", "target": "b" },
+          { "desc": "Begin developing coastal tourism by building hotels close to the shoreline.", "target": "c" }
+        ]
+      }
+    },
+    "1": {
+      "a": {
+        "image": "",
+        "text": "Your survey revealed that several homes near the shoreline are highly vulnerable to storm surges and could be lost within 20 years. The study also identified areas where reefs and seagrass play a crucial role in stabilising the coast.\n\nFaced with this data, you now need to choose how best to defend the shoreline:",
+        "options": [
+          { "desc": "Construct an artificial reef to slow erosion and provide habitat.", "target": "a" },
+          { "desc": "Build a seawall to directly block wave energy near the houses.", "target": "b" }
+        ]
       },
-      "1":
-      {
-        "a":
-        {
-          "text":"You chose to build a seawall. Decide how to improve or maintain your seawall strategy.",
-          "options": [
-            {
-              "desc":"Invest in stronger, more durable materials",
-              "target": "a",
-              "points": 3
-            },
-            {
-              "desc":"Add natural buffers alongside the wall",
-              "target": "b",
-              "points": 2
-            },
-            {
-              "desc": "Cut costs with cheaper materials",
-              "target": "c",
-              "points": 1
-            }
-          ]    
-        },
-        "b":
-        {
-          "text":"You chose to restore mangroves. Decide how to manage the restoration project.",
-          "options": [
-            {
-              "desc":"Plant diverse native mangrove species",
-              "target": "a",
-              "points": 3
-            },
-            {
-              "desc":"Focus on fast-growing species for quick results",
-              "target": "b",
-              "points": 2
-            },
-            {
-              "desc": "Limit restoration to small areas to save budget",
-              "target": "c",
-              "points": 1
-            }
-          ]
-        },
-        "c":
-        {
-          "text":"You chose to relocate houses inland. Decide how to support the community during relocation.",
-          "options": [
-            {
-              "desc":"Provide financial incentives and new infrastructure",
-              "target": "a",
-              "points": 3
-            },
-            {
-              "desc":"Offer temporary housing and job training",
-              "target": "b",
-              "points": 2
-            },
-            {
-              "desc": "Relocate only the most vulnerable families",
-              "target": "c",
-              "points": 1
-            }
-          ]
-        }
+      "b": {
+        "image": "",
+        "text": "Your fishing program introduced new catch limits and reduced pressure on depleted stocks. Early signs show fewer boats are active, but monitoring also reveals that habitat loss is a major barrier to full recovery.\n\nTo help rebuild these vital ecosystems, you must decide what action to take next:",
+        "options": [
+          { "desc": "Prevent anchoring in seagrass areas and provide buoys for mooring.", "target": "a" },
+          { "desc": "Replant seagrass meadows to create new nursery grounds for fish.", "target": "b" }
+        ]
+      },
+      "c": {
+        "image": "",
+        "text": "Beachfront hotels were quickly constructed and are bringing in visitors. The new development provides jobs, but waves continue to strip sand from the shore and the reef nearby is showing signs of stress.\n\nTo make the area more attractive for tourists, you need to decide how to invest in the coast:",
+        "options": [
+          { "desc": "Restore nearby reefs and ecosystems to support eco-tourism.", "target": "a" },
+          { "desc": "Transport sand to rebuild and widen the beaches for visitors.", "target": "b" }
+        ]
+      }
+    },
+    "2": {
+      "aa": {
+        "image": "",
+        "text": "The artificial reef helped break waves and fish have already begun to settle in the structures. However, damage from boat propellers and anchors is scarring nearby seagrass beds, weakening one of the bay’s natural defences.\n\nYou must decide how to manage boat activity in the bay:",
+        "options": [
+          { "desc": "Restrict boats from shallow seagrass areas to allow recovery.", "target": "a" },
+          { "desc": "Create shared-use zones with limited fishing and active seagrass restoration.", "target": "b" },
+          { "desc": "Allow boats unrestricted access, keeping fishing convenient but risking further decline.", "target": "c" }
+        ]
+      },
+      "ab": {
+        "image": "",
+        "text": "The seawall has protected the houses from waves, but the disruption to sand movement has caused beaches further down the coast to erode more quickly. Wildlife nesting sites are also being lost.\n\nYou must decide how to address these new erosion issues:",
+        "options": [
+          { "desc": "Add natural buffers like dunes and mangroves alongside the seawall.", "target": "a" },
+          { "desc": "Begin regular sand replenishment on the most eroded beaches.", "target": "b" },
+          { "desc": "Do nothing further, accepting continued erosion.", "target": "c" }
+        ]
+      },
+      "ba": {
+        "image": "",
+        "text": "Installing mooring buoys reduced anchor scars, and patches of seagrass are beginning to regrow. Some fishers, however, are frustrated about reduced access to traditional spots.\n\nYou need to decide how to keep the program effective while addressing community concerns:",
+        "options": [
+          { "desc": "Run community workshops with fishers and co-design management rules.", "target": "a" },
+          { "desc": "Provide partial compensation or alternative fishing areas.", "target": "b" },
+          { "desc": "Remove restrictions to avoid conflict, risking new seagrass damage.", "target": "c" }
+        ]
+      },
+      "bb": {
+        "image": "",
+        "text": "Seagrass replanting has taken root in several areas, and fish fry have been spotted among the shoots. However, storms and careless boating continue to damage fragile young beds.\n\nYou must choose how to strengthen the replanting effort:",
+        "options": [
+          { "desc": "Pair seagrass plots with artificial reef structures for shelter.", "target": "a" },
+          { "desc": "Keep restoration small and protected while scaling up slowly.", "target": "b" },
+          { "desc": "Suspend the project and divert funding elsewhere.", "target": "c" }
+        ]
+      },
+      "ca": {
+        "image": "",
+        "text": "Reef restoration brought more divers to the area and increased fish abundance. But boat anchors and heavy traffic continue to stress fragile corals near the hotels.\n\nYou must decide how to balance reef access with long-term health:",
+        "options": [
+          { "desc": "Establish marine protected zones with strict no-anchor policies.", "target": "a" },
+          { "desc": "Expand mooring systems to limit direct coral damage.", "target": "b" },
+          { "desc": "Keep reefs open to all traffic, prioritising tourism numbers.", "target": "c" }
+        ]
+      },
+      "cb": {
+        "image": "",
+        "text": "Sand transport widened the beach and brought in more tourists, but storms quickly washed much of it away. Costs are rising, and the shoreline still feels unstable.\n\nYou must choose how to improve the sustainability of beach maintenance:",
+        "options": [
+          { "desc": "Combine sand replenishment with dune restoration and planting.", "target": "a" },
+          { "desc": "Continue importing sand regularly despite high costs.", "target": "b" },
+          { "desc": "Stop sand works and allow natural erosion to continue.", "target": "c" }
+        ]
+      }
+    },
+    "3": {
+      "aaa": {
+        "image": "",
+        "text": "Restricting boats in shallow areas allowed seagrass beds to recover, stabilising sediments and supporting juvenile fish. Local waters are clearer and fish stocks are rising, though fishers must now adapt to smaller fishing grounds.\n\nTo support both livelihoods and ecosystems, what should the town do next?",
+        "options": [
+          { "desc": "Develop eco-tour guiding and monitoring jobs for local fishers.", "target": "a" },
+          { "desc": "Maintain current restrictions without community support programs.", "target": "b" }
+        ]
+      },
+      "aab": {
+        "image": "",
+        "text": "Shared-use zones allowed some restoration but frequent conflicts slowed progress. Seagrass recovery is patchy, and fish stocks are only slightly improved.\n\nTo push recovery further, what action should you take?",
+        "options": [
+          { "desc": "Expand restoration zones and improve enforcement.", "target": "a" },
+          { "desc": "Scale back restoration to keep conflict low.", "target": "b" }
+        ]
+      },
+      "aba": {
+        "image": "",
+        "text": "Adding dunes and mangroves alongside the seawall reduced erosion and created new habitats for birds and crabs. The coast looks more natural, but requires maintenance and monitoring.\n\nHow should the town continue this approach?",
+        "options": [
+          { "desc": "Expand natural buffers along more of the coastline.", "target": "a" },
+          { "desc": "Maintain current areas without expanding further.", "target": "b" }
+        ]
+      },
+      "abb": {
+        "image": "",
+        "text": "Sand replenishment kept beaches wide for tourists, but erosion still occurs elsewhere and costs are high. Wildlife remains at risk in heavily eroded zones.\n\nWhat strategy should the town adopt next?",
+        "options": [
+          { "desc": "Combine replenishment with dune vegetation for longer-term stability.", "target": "a" },
+          { "desc": "Reduce replenishment frequency to save money.", "target": "b" }
+        ]
+      },
+      "baa": {
+        "image": "",
+        "text": "Workshops improved trust between fishers and scientists. Compliance with rules improved, and seagrass recovery accelerated. The community is more aware of the ecosystem’s value.\n\nHow can this momentum be carried forward?",
+        "options": [
+          { "desc": "Expand education into schools and tourism operators.", "target": "a" },
+          { "desc": "Keep workshops focused only on fishers.", "target": "b" }
+        ]
+      },
+      "bab": {
+        "image": "",
+        "text": "Compensation programs kept tensions low, but the town’s budget is heavily strained. While seagrass beds show early signs of recovery, funding gaps risk the project’s future.\n\nHow should the town proceed?",
+        "options": [
+          { "desc": "Apply for external grants and link compensation to restoration success.", "target": "a" },
+          { "desc": "Phase out compensation while maintaining some protections.", "target": "b" }
+        ]
+      },
+      "bba": {
+        "image": "",
+        "text": "Pairing seagrass with artificial reefs gave young plants shelter from storms, helping beds expand faster. Fish numbers are visibly increasing in the area.\n\nWhat should the town focus on now?",
+        "options": [
+          { "desc": "Promote eco-tourism around seagrass and reef areas.", "target": "a" },
+          { "desc": "Keep restoration low-profile and limited to science projects.", "target": "b" }
+        ]
+      },
+      "bbb": {
+        "image": "",
+        "text": "Small restoration plots survived storms but progress across the bay is slow. Fish are returning, but habitats remain fragmented.\n\nWhat should your next step be?",
+        "options": [
+          { "desc": "Expand into larger restoration plots with stronger protection.", "target": "a" },
+          { "desc": "Continue with small-scale cautious planting.", "target": "b" }
+        ]
+      },
+      "caa": {
+        "image": "",
+        "text": "Marine protected zones allowed coral to rebound and fish to thrive, attracting eco-tourists. However, some operators feel restricted in their activities.\n\nHow should the protection be managed going forward?",
+        "options": [
+          { "desc": "Expand protected areas further offshore.", "target": "a" },
+          { "desc": "Keep the zones limited to current boundaries.", "target": "b" }
+        ]
+      },
+      "cab": {
+        "image": "",
+        "text": "Mooring points reduced direct anchor damage and reef condition has slightly improved. However, heavy traffic still stresses the ecosystem.\n\nWhat is the best next step?",
+        "options": [
+          { "desc": "Add more moorings and expand protected reef corridors.", "target": "a" },
+          { "desc": "Leave the system unchanged, keeping access unrestricted.", "target": "b" }
+        ]
+      },
+      "cba": {
+        "image": "",
+        "text": "Pairing dune building and vegetation with sand replenishment reduced erosion and created a more natural-looking beachfront. Tourists enjoy the landscape and it is more resilient to storms.\n\nWhat should you do next?",
+        "options": [
+          { "desc": "Expand dune restoration along the full beach.", "target": "a" },
+          { "desc": "Maintain only the current dune areas.", "target": "b" }
+        ]
+      },
+      "cbb": {
+        "image": "",
+        "text": "Continuing heavy sand transport kept beaches wide but drained the budget. Erosion shifted further down the coast, leaving vulnerable areas exposed.\n\nHow should the town respond?",
+        "options": [
+          { "desc": "Seek external funding to sustain replenishment projects.", "target": "a" },
+          { "desc": "Abandon large-scale replenishment to cut costs.", "target": "b" }
+        ]
       }
     }
+  }
 }
