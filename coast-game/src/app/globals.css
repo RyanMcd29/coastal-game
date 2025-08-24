@@ -1,13 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --background: #e0f7fa;
-  --foreground: #023e8a;
-  --ocean-light: #90e0ef;
-  --ocean: #00b4d8;
-  --ocean-dark: #0077b6;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -19,11 +11,9 @@
 }
 
 body {
-  background-color: var(--background);
   background-size: cover;
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  color-scheme: light;
+  /* color-scheme: light; */
 }
 
 .pixel-ui {
