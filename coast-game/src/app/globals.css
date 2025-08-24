@@ -1,13 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --background: #e0f7fa;
-  --foreground: #023e8a;
-  --ocean-light: #90e0ef;
-  --ocean: #00b4d8;
-  --ocean-dark: #0077b6;
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -18,17 +10,10 @@
   --font-mono: var(--font-press-start), monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #001d3d;
-    --foreground: #e0f7fa;
-  }
-}
-
 body {
   background-size: cover;
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  /* color-scheme: light; */
 }
 
 .pixel-ui {
@@ -66,15 +51,6 @@ body {
 }
 
 @layer utilities {
-  @keyframes wave {
-    from {
-      background-position-x: 0;
-    }
-    to {
-      background-position-x: -1000px;
-    }
-  }
-
   @keyframes fade-in {
     from {
       opacity: 0;
@@ -83,11 +59,4 @@ body {
       opacity: 1;
     }
   }
-
-  /* .wave-bg {
-    background-image: url("/wave.svg");
-    background-repeat: repeat-x;
-    background-size: 1000px 100%;
-    animation: wave 15s linear infinite;
-  } */
 }

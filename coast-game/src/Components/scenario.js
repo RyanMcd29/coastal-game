@@ -25,7 +25,7 @@ text-xs">
                 height={1000}
             />
             <div className="mx-auto w-3/5 max-sm:w-full bg-white p-8">
-                <p key={animKey} style={{"border-bottom": "solid"}} className="text-black text-center p-4 pb-2">
+                <p key={animKey} style={{"borderBottom": "solid"}} className="text-black text-center p-4 pb-2">
                     {letters.map((char, i) => (
                         <span
                             key={i}
