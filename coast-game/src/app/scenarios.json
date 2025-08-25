@@ -2,7 +2,7 @@
   "layers": {
     "0": {
       "": {
-        "image": "dolphin.",
+        "image": "dolphin.png",
         "text": "Rising sea levels are threatening a small fishing town. The community has asked you, a Marine Scientist, to guide them in protecting both their livelihoods and their coastline.\n\nSome locals see opportunity in tourism and want to restore the beaches and build hotels near the ocean. Others are concerned about overfishing and the health of local ecosystems.\n\nFunding is limited, so the town must choose carefully. What will your first step be?",
         "options": [
           { "desc": "Conduct a survey of the local ecosystems and beaches to understand the current conditions before making decisions.", "target": "a" },
@@ -13,7 +13,7 @@
     },
     "1": {
       "a": {
-        "image": "",
+        "image": "house.png",
         "text": "Your survey revealed that several homes near the shoreline are highly vulnerable to storm surges and could be lost within 20 years. The study also identified areas where reefs and seagrass play a crucial role in stabilising the coast.\n\nFaced with this data, you now need to choose how best to defend the shoreline:",
         "options": [
           { "desc": "Construct an artificial reef to slow erosion and provide habitat.", "target": "a" },
@@ -29,7 +29,7 @@
         ]
       },
       "c": {
-        "image": "",
+        "image": "hotel.png",
         "text": "Beachfront hotels were quickly constructed and are bringing in visitors. The new development provides jobs, but waves continue to strip sand from the shore and the reef nearby is showing signs of stress.\n\nTo make the area more attractive for tourists, you need to decide how to invest in the coast:",
         "options": [
           { "desc": "Restore nearby reefs and ecosystems to support eco-tourism.", "target": "a" },
@@ -39,7 +39,7 @@
     },
     "2": {
       "aa": {
-        "image": "",
+        "image": "art_reef.png",
         "text": "The artificial reef helped break waves and fish have already begun to settle in the structures. However, damage from boat propellers and anchors is scarring nearby seagrass beds, weakening one of the bay’s natural defences.\n\nYou must decide how to manage boat activity in the bay:",
         "options": [
           { "desc": "Restrict boats from shallow seagrass areas to allow recovery.", "target": "a" },

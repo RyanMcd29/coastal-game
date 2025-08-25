@@ -15,16 +15,17 @@ export default function Scenario({scenario, path, setPath, setPage}) {
     }, [scenario.text]);
 
     return (
-        <div className="flex flex-wrap w-full border-4 border-black bg-white flex-auto whitespace-pre-line
-text-xs">
-            <Image 
-                className="mx-auto w-2/5 max-sm:48 image-fit aspect-square object-cover" 
-                src={scenario.image} 
-                alt="scenario image" 
-                width={1000} 
-                height={1000}
-            />
-            <div className="mx-auto w-3/5 max-sm:w-full bg-white p-8">
+        <div className="flex flex-wrap w-full border-4 border-black bg-white flex-auto whitespace-pre-line text-xs max-sm:border-none">
+            <div className="image-container mx-auto my-auto p-4 w-2/5">
+                <Image 
+                    className="mx-auto my-auto max-sm:48 image-fit aspect-square object-cover" 
+                    src={`scenario_images/${scenario.image}`} 
+                    alt="scenario image" 
+                    width={1000} 
+                    height={1000}
+                />
+            </div>
+            <div className="mx-auto my-auto w-3/5 max-sm:w-full bg-white p-8">
                 <p key={animKey} style={{"borderBottom": "solid"}} className="text-black text-center p-4 pb-2">
                     {letters.map((char, i) => (
                         <span
