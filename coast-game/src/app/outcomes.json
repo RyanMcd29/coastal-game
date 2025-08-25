@@ -1,0 +1,22 @@
+{    
+    "good":{
+        "paths": ["aaaa"],
+        "image":"",
+        "text": "Your restoration and economic decisions were successful, you protected nearby exosystems from further decline and the town is now sustainable."
+    },
+    "good_neutral":{
+        "paths": ["bbbb"],
+        "image":"",
+        "text": "Your decisions were helpful to reduce further decline of ecosystems and delayed effects of rising sea levels"
+    },
+    "bad_neutral": {
+        "paths": ["cbcb"],
+        "image": "",
+        "text": "You delayed effects of rising sea levels but ecosystems have seen an unsustainable decline"
+    },
+    "bad": {
+        "paths":["cccc"],
+        "images": "",
+        "text": "Your decisions gave short term benefits, but long term were unsustainable in saving the town and ecosystems."
+    }
+}
