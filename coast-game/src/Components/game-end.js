@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import OutCome from "./outcome";
 import outcomes from "../app/outcomes.json"
 import Image from "next/image";
 
@@ -22,7 +21,6 @@ const calcScore = (path) => {
 };
 
 const getOutcome = (gamepath) => {
-    gamepath = "aaaa";
     return Object.values(outcomes).filter(
         outcome => {
             if (outcome.paths.includes(gamepath)) {
