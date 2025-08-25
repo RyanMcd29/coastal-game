@@ -49,7 +49,7 @@ export default function GameEnd({ path, setPage }) {
         setPage("start");
     };
     return (
-        <div className="bg-white p-8 border-4 border-black max-sm:w-full flex">
+        <div className="bg-white max-sm:p-1 md:p-8 border-4 border-black max-sm:w-full flex flex-wrap">
             <div className="image-container mx-auto my-auto p-4 w-2/5">
                 <Image 
                     className="mx-auto my-auto max-sm:48 image-fit aspect-square object-cover" 
@@ -60,7 +60,7 @@ export default function GameEnd({ path, setPage }) {
                 />
             </div>
             <div className="mx-auto my-auto w-3/5 max-sm:w-full bg-white text-xs p-8">
-                <em>{outcome.text}</em>
+                <p>{outcome.text}</p>
                 <div className='flex flex-wrap mt-6'>
                 <p className="text-black w-full">You Scored: {points}</p>
                     <input

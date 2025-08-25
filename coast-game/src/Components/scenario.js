@@ -25,7 +25,7 @@ export default function Scenario({scenario, path, setPath, setPage}) {
                     height={1000}
                 />
             </div>
-            <div className="mx-auto my-auto w-3/5 max-sm:w-full bg-white p-8">
+            <div className="mx-auto my-auto w-3/5 max-sm:w-full bg-white max-sm:p-2 md:p-8">
                 <p key={animKey} style={{"borderBottom": "solid"}} className="text-black text-center p-4 pb-2">
                     {letters.map((char, i) => (
                         <span
