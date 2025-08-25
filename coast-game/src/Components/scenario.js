@@ -40,7 +40,7 @@ export default function Scenario({scenario, path, setPath, setPage}) {
                         </span>
                     ))}
                 </p>
-                <div className={`stack-xs text-black pt-8 transition-opacity duration-500 ${showOptions ? "opacity-100" : "opacity-0"}`}>
+                <div className={`stack-xs text-black max-sm:pt-2 pt-8 transition-opacity duration-500 ${showOptions ? "opacity-100" : "opacity-0"}`}>
                     {(() => {
                         const shuffledOptions = [...(scenario.options || [])].sort(() => Math.random() - 0.5);
                         return shuffledOptions.map((option, i) => (
