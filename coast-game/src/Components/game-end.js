@@ -21,19 +21,21 @@ const calcScore = (path) => {
 };
 
 const getOutcome = (gamepath) => {
-    return Object.values(outcomes).filter(
+    return (Object.values(outcomes).find(
         outcome => {
             if (outcome.paths.includes(gamepath)) {
                 return (outcome)
             }
         }
-    )
+    ) || {
+                "text":"no matching outcome found",
+                "image": ""
+    }) 
 }
 
 export default function GameEnd({ path, setPage }) {
     const points = calcScore(path);
     const outcome = getOutcome(path)
-    console.log(outcome[0])
     const [name, setName] = useState("");
     const [leaderboard, setLeaderboard] = useState([]);
     useEffect(() => {
@@ -51,14 +53,14 @@ export default function GameEnd({ path, setPage }) {
             <div className="image-container mx-auto my-auto p-4 w-2/5">
                 <Image 
                     className="mx-auto my-auto max-sm:48 image-fit aspect-square object-cover" 
-                    src={`scenario_images/${outcome[0].image}`} 
+                    src={`scenario_images/${outcome.image}`} 
                     alt="scenario image" 
                     width={1000} 
                     height={1000}
                 />
             </div>
             <div className="mx-auto my-auto w-3/5 max-sm:w-full bg-white text-xs p-8">
-                <em>{outcome[0].text}</em>
+                <em>{outcome.text}</em>
                 <div className='flex flex-wrap mt-6'>
                 <p className="text-black w-full">You Scored: {points}</p>
                     <input
