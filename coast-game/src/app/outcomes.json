@@ -1,22 +1,22 @@
-{    
-    "good":{
-        "paths": ["aaaa"],
-        "image":"",
-        "text": "Your restoration and economic decisions were successful, you protected nearby exosystems from further decline and the town is now sustainable."
+{
+    "good": {
+    "paths": ["aaaa", "aaba", "baaa", "bbaa", "caaa"],
+    "image": "",
+    "text": "Excellent balance of protection and livelihoods: nature-based solutions, community buy-in, and careful access rules boosted fish stocks, stabilised shores, and created steady eco-tourism jobs."
     },
-    "good_neutral":{
-        "paths": ["bbbb"],
-        "image":"",
-        "text": "Your decisions were helpful to reduce further decline of ecosystems and delayed effects of rising sea levels"
+    "good_neutral": {
+    "paths": ["aaab", "abaa", "abba", "baba", "bbba", "caba", "cbaa"],
+    "image": "",
+    "text": "Solid progress overall: ecosystems improved and erosion slowed, though trade-offs (costs, access limits, or slower scaling) kept results shy of best-case."
     },
     "bad_neutral": {
-        "paths": ["cbcb"],
-        "image": "",
-        "text": "You delayed effects of rising sea levels but ecosystems have seen an unsustainable decline"
+    "paths": ["aabb", "abbb", "babb", "cbba", "cabb", "bbbb"],
+    "image": "",
+    "text": "Short-term stability with long-term risks: some erosion control or habitat gains occurred, but funding strain, weak enforcement, or limited scale left the town vulnerable."
     },
     "bad": {
-        "paths":["cccc"],
-        "images": "",
-        "text": "Your decisions gave short term benefits, but long term were unsustainable in saving the town and ecosystems."
+    "paths": ["aac", "abc", "bac", "bbc", "cac", "cbbb", "cbc"],
+    "images": "",
+    "text": "Unsustainable outcome: choices favoured convenience or short-term gains, leading to degraded habitats, budget blowouts, or worsening erosion that undermined the town’s future."
     }
-}
+    }
