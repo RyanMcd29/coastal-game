@@ -27,8 +27,8 @@ export default function Scenario({scenario, path, setPath, outcome, setOutcome})
                     height={1024}
                 />
             </div>
-            <div className="mx-auto my-auto w-3/5 max-sm:w-full bg-white max-sm:p-2 md:p-8">
-                <p key={animKey} style={{"borderBottom": "solid"}} className="text-black text-center p-4 pb-2">
+            <div className="mx-auto my-auto w-3/5 max-sm:w-full bg-white max-sm:p-2">
+                <p key={animKey} style={{"borderBottom": "solid"}} className="text-black text-center p-4 pb-6">
                     {letters.map((char, i) => (
                         <span
                             key={i}
@@ -42,7 +42,7 @@ export default function Scenario({scenario, path, setPath, outcome, setOutcome})
                         </span>
                     ))}
                 </p>
-                <div className={`stack-xs text-black max-sm:pt-2 pt-8 transition-opacity duration-500 ${showOptions ? "opacity-100" : "opacity-0"}`}>
+                <div className={`stack-xs text-black max-sm:pt-4 pt-8 transition-opacity duration-500 ${showOptions ? "opacity-100" : "opacity-0"}`}>
                     {(() => {
                         const shuffledOptions = [...(scenario.options || [])].sort(() => Math.random() - 0.5);
                         return shuffledOptions.map((option, i) => (

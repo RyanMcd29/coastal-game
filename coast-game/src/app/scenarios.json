@@ -3,7 +3,7 @@
     "0": {
       "": {
         "image": "dolphin.png",
-        "text": "Rising seas and loss of reliable fishing sources are threatening a small coastal town. Some locals push for a study to weigh up restoring natural habitats, others demand strong barriers to protect homes immediately, while a few are pushing for sand nourishment on the beach to push back the shoreline and to make the town more attractive for visitors. \n\n The local council has called on you, a coastal engineer, to survey the coastline and assess any structures or intervention methods that could secure the town's future. \n\n You only have limited funds, click or tap on a option below to decide on the course of action you want to take.",
+        "text": "Rising seas and loss of reliable fishing sources are threatening a small coastal town. Some locals push for a study to weigh up restoring natural habitats, others demand strong barriers to protect homes immediately, while a few are pushing for sand nourishment on the beach to push back the shoreline and to make the town more attractive for visitors. \n\n The local council has called on you, a coastal engineer, to survey the coastline and assess any structures or intervention methods that could secure the town's future. \n\n You only have limited funds, click/tap on a option below to decide on the course of action you want to take.",
         "options": [
           {
             "desc": "Survey local habitats and plan ecosystem restoration as a natural defence.",
@@ -61,9 +61,9 @@
         "text": "Tourism is seen as the quickest way to bring money into the town. Some argue for eco-tourism built around protecting natural areas, while others want to widen sandy beaches to attract more visitors. Both bring short-term benefits, but neither directly addresses sea level rise.",
         "options": [
           {
-            "desc": "Invest in eco\u2011tourism by protecting reefs, turtle nesting areas, and seagrass (e.g., moorings, no\u2011anchor zones, lighting controls).",
+            "desc": "Invest in eco\u2011tourism by protecting reefs, turtle nesting areas, and seagrass (e.g., moorings, no\u2011anchor zones, marine protected areas).",
             "target": "a",
-            "outcome": "Eco\u2011tourism brought divers, snorkellers, and wildlife enthusiasts. Moorings and no\u2011anchor zones reduced direct damage, and turtle\u2011friendly lighting lowered nesting disturbance. Yet, higher visitation still increased wear on fragile sites, and during marine heatwaves already\u2011stressed corals fared poorly."
+            "outcome": "Eco\u2011tourism brought divers, snorkellers, and wildlife enthusiasts. Moorings and no\u2011anchor zones reduced direct damage, and protected areas allowed fish stocks to grow. Yet, higher visitation still increased wear on fragile sites, and during marine heatwaves already\u2011stressed corals fared poorly."
           },
           {
             "desc": "Transport sand to widen beaches, attract tourists, and give the impression of holding back rising seas.",
@@ -81,12 +81,12 @@
           {
             "desc": "Restrict boats from entering shallow seagrass areas.",
             "target": "a",
-            "outcome": "Strict limits reduced propeller scarring and wake\u2011driven turbidity, giving seagrass space to regrow. Water clarity improved and fish nursery function strengthened. Boaters, however, felt their freedoms were being taken away."
+            "outcome": "Strict limits reduced propeller scarring allowing seagrass to regrow quickly. Water clarity improved and fish nursery function strengthened. Boaters, however, felt their freedoms were being taken away."
           },
           {
             "desc": "Offer moorings for boats and limit speeds in sensitive areas.",
             "target": "b",
-            "outcome": "Moorings and speed limits cut some anchor damage and wake energy, and seagrass recovery began in patches. Progress remained uneven and required ongoing monitoring and compliance."
+            "outcome": "Moorings and speed limits cut some anchor damage and wake energy, and seagrass recovery began in patches. Progress remained uneven and required ongoing monitoring."
           },
           {
             "desc": "Leave boat access unrestricted.",

@@ -1,7 +1,7 @@
 export default function ScenBtn({ option, path, setPath, setOutcome }) {
     return (
         <button
-            className="hover:text-cyan-400 mt-4 text-left w-4/5 flex max-sm:w-full max-sm:p-1"
+            className="hover:text-cyan-400 mb-4 text-left w-4/5 flex max-sm:w-full max-sm:p-1"
             onClick={() => {
                 setOutcome(option.outcome)
                 setPath(path + option.target);
