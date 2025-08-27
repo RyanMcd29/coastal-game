@@ -22,7 +22,7 @@ export default function Scenario({scenario, path, setPath, outcome, setOutcome})
                 <Image 
                     className="mx-auto my-auto max-sm:48 image-fit aspect-square object-cover" 
                     src={`scenario_images/${scenario.image}`} 
-                    alt="scenario image" 
+                    alt={`${scenario.image}`} 
                     width={1024} 
                     height={1024}
                 />
