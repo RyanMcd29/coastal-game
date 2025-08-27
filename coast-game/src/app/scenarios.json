@@ -3,191 +3,491 @@
     "0": {
       "": {
         "image": "dolphin.png",
-        "text": "Rising sea levels are threatening a small fishing town. The community has asked you, a Marine Scientist, to guide them in protecting both their livelihoods and their coastline.\n\nSome locals see opportunity in tourism and want to restore the beaches and build hotels near the ocean. Others are concerned about overfishing and the health of local ecosystems.\n\nFunding is limited, so the town must choose carefully. What will your first step be?",
+        "text": "Rising seas and loss of reliable fishing sources are threatening a small coastal town. Some locals push for a study to weigh up restoring natural habitats, others demand strong barriers to protect homes immediately, while a few are pushing for sand nourishment on the beach to push back the shoreline and to make the town more attractive for visitors. \n\n The local council has called on you, a coastal engineer, to survey the coastline and assess any structures or intervention methods that could secure the town's future. \n\n You only have limited funds, click or tap on a option below to decide on the course of action you want to take.",
         "options": [
-          { "desc": "Conduct a survey of the local ecosystems and beaches to understand the current conditions before making decisions.", "target": "a" },
-          { "desc": "Launch a program to restore fish populations and reduce the impacts of overfishing.", "target": "b" },
-          { "desc": "Begin developing coastal tourism by building hotels close to the shoreline.", "target": "c" }
+          {
+            "desc": "Survey local habitats and plan ecosystem restoration as a natural defence.",
+            "target": "a",
+            "outcome": "Your surveys revealed that reefs and seagrass had declined, weakening natural coastal defences. While this opened the way for habitat-based recovery, progress would take time and storms remained a near-term threat."
+          },
+          {
+            "desc": "Construct a seawall to defend the town from rising seas and erosion.",
+            "target": "b",
+            "outcome": "The seawall quickly protected homes and businesses, reassuring residents. Yet, it disrupted natural sand flows, causing erosion elsewhere and placing additional stress on nearby habitats."
+          },
+          {
+            "desc": "Transport sand to the eroded beach, to widen the shoreline and support tourism.",
+            "target": "c",
+            "outcome": "New sand initially widened the beach and boosted visitor numbers. However, frequent storms rapidly stripped the sand from the beach, requiring repeated projects that strained the budget while leaving underlying erosion drivers unaddressed."
+          }
         ]
       }
     },
     "1": {
       "a": {
         "image": "house.png",
-        "text": "Your survey revealed that several homes near the shoreline are highly vulnerable to storm surges and could be lost within 20 years. The study also identified areas where reefs and seagrass play a crucial role in stabilising the coast.\n\nFaced with this data, you now need to choose how best to defend the shoreline:",
+        "text": "To revitalise habitats and strengthen the shoreline, the community must decide how to act on your survey results.",
         "options": [
-          { "desc": "Construct an artificial reef to slow erosion and provide habitat.", "target": "a" },
-          { "desc": "Build a seawall to directly block wave energy near the houses.", "target": "b" }
+          {
+            "desc": "Restore seagrass meadows. Recovery will take time, but they provide long-term protection and habitat.",
+            "target": "a",
+            "outcome": "Seagrass planting began stabilising sediments and creating nursery areas for fish. However, recovery was slow, and locals grew impatient waiting for visible benefits."
+          },
+          {
+            "desc": "Construct an artificial reef to reduce wave energy and create habitat while natural systems recover.",
+            "target": "b",
+            "outcome": "The artificial reef gave quick protection from waves and attracted some marine life, but it was costly and offered only limited ecological benefits compared to natural habitats."
+          }
         ]
       },
       "b": {
-        "image": "",
-        "text": "Your fishing program introduced new catch limits and reduced pressure on depleted stocks. Early signs show fewer boats are active, but monitoring also reveals that habitat loss is a major barrier to full recovery.\n\nTo help rebuild these vital ecosystems, you must decide what action to take next:",
+        "image": "sand.png",
+        "text": "The seawall has shielded the town, but it is blocking the natural flow of sand. Beaches are no longer being replenished, leaving seagrass beds and turtle nesting areas exposed to erosion. Without action, these habitats could be lost.",
         "options": [
-          { "desc": "Prevent anchoring in seagrass areas and provide buoys for mooring.", "target": "a" },
-          { "desc": "Replant seagrass meadows to create new nursery grounds for fish.", "target": "b" }
+          {
+            "desc": "Redirect sand with managed channels to restore natural flow and protect nearby habitats.",
+            "target": "a",
+            "outcome": "Sand channels helped restore the flow, slowing erosion on turtle nesting beaches and seagrass meadows. Yet, they required constant upkeep, and the community worried about the ongoing expense."
+          },
+          {
+            "desc": "Transport sand directly to critical areas to reinforce beaches quickly.",
+            "target": "b",
+            "outcome": "Sand relocation provided short-term relief for turtle nesting beaches, but it disrupted ecosystems and had to be repeated after each major storm, draining resources."
+          }
         ]
       },
       "c": {
         "image": "hotel.png",
-        "text": "Beachfront hotels were quickly constructed and are bringing in visitors. The new development provides jobs, but waves continue to strip sand from the shore and the reef nearby is showing signs of stress.\n\nTo make the area more attractive for tourists, you need to decide how to invest in the coast:",
+        "text": "Tourism is seen as the quickest way to bring money into the town. Some argue for eco-tourism built around protecting natural areas, while others want to widen sandy beaches to attract more visitors. Both bring short-term benefits, but neither directly addresses sea level rise.",
         "options": [
-          { "desc": "Restore nearby reefs and ecosystems to support eco-tourism.", "target": "a" },
-          { "desc": "Transport sand to rebuild and widen the beaches for visitors.", "target": "b" }
+          {
+            "desc": "Invest in eco\u2011tourism by protecting reefs, turtle nesting areas, and seagrass (e.g., moorings, no\u2011anchor zones, lighting controls).",
+            "target": "a",
+            "outcome": "Eco\u2011tourism brought divers, snorkellers, and wildlife enthusiasts. Moorings and no\u2011anchor zones reduced direct damage, and turtle\u2011friendly lighting lowered nesting disturbance. Yet, higher visitation still increased wear on fragile sites, and during marine heatwaves already\u2011stressed corals fared poorly."
+          },
+          {
+            "desc": "Transport sand to widen beaches, attract tourists, and give the impression of holding back rising seas.",
+            "target": "b",
+            "outcome": "Wider beaches created a tourism boom and gave locals the sense that sea level rise was being delayed. But storms quickly stripped the sand away, and repeating the process drained resources while the underlying risk remained."
+          }
         ]
       }
     },
     "2": {
       "aa": {
-        "image": "art_reef.png",
-        "text": "The artificial reef helped break waves and fish have already begun to settle in the structures. However, damage from boat propellers and anchors is scarring nearby seagrass beds, weakening one of the bay’s natural defences.\n\nYou must decide how to manage boat activity in the bay:",
+        "image": "seagrass.png",
+        "text": "Boats and storms continue to disturb fragile young seagrass beds. How will you strengthen recovery?",
         "options": [
-          { "desc": "Restrict boats from shallow seagrass areas to allow recovery.", "target": "a" },
-          { "desc": "Create shared-use zones with limited fishing and active seagrass restoration.", "target": "b" },
-          { "desc": "Allow boats unrestricted access, keeping fishing convenient but risking further decline.", "target": "c" }
+          {
+            "desc": "Restrict boats from entering shallow seagrass areas.",
+            "target": "a",
+            "outcome": "Strict limits reduced propeller scarring and wake\u2011driven turbidity, giving seagrass space to regrow. Water clarity improved and fish nursery function strengthened. Boaters, however, felt their freedoms were being taken away."
+          },
+          {
+            "desc": "Offer moorings for boats and limit speeds in sensitive areas.",
+            "target": "b",
+            "outcome": "Moorings and speed limits cut some anchor damage and wake energy, and seagrass recovery began in patches. Progress remained uneven and required ongoing monitoring and compliance."
+          },
+          {
+            "desc": "Leave boat access unrestricted.",
+            "target": "c",
+            "outcome": "Unrestricted access maintained convenience for boaters, but propeller scars and resuspended sediments expanded, suppressing seagrass recovery and weakening natural coastal protection."
+          }
         ]
       },
       "ab": {
-        "image": "",
-        "text": "The seawall has protected the houses from waves, but the disruption to sand movement has caused beaches further down the coast to erode more quickly. Wildlife nesting sites are also being lost.\n\nYou must decide how to address these new erosion issues:",
+        "image": "art_reef.png",
+        "text": "The artificial reef is working, but fish numbers remain low. How will you restore stocks?",
         "options": [
-          { "desc": "Add natural buffers like dunes and mangroves alongside the seawall.", "target": "a" },
-          { "desc": "Begin regular sand replenishment on the most eroded beaches.", "target": "b" },
-          { "desc": "Do nothing further, accepting continued erosion.", "target": "c" }
+          {
+            "desc": "Combine artificial reefs with seagrass restoration.",
+            "target": "a",
+            "outcome": "Together, reefs and seagrass created shelter plus nursery grounds, supporting recruitment and survival of juveniles. Coordination and monitoring costs were high."
+          },
+          {
+            "desc": "Designate marine protected areas to reduce fishing pressure.",
+            "target": "b",
+            "outcome": "Protected zones let fish mature and reproduce, improving populations over time. Still, some fishers opposed the restrictions and trust was strained."
+          },
+          {
+            "desc": "Expand the artificial reef network.",
+            "target": "c",
+            "outcome": "Additional modules drew large schools quickly, but evidence suggested more fish were being attracted from natural reefs than produced anew. The network was costly to build and maintain, and some nearby natural sites declined."
+          }
         ]
       },
       "ba": {
-        "image": "",
-        "text": "Installing mooring buoys reduced anchor scars, and patches of seagrass are beginning to regrow. Some fishers, however, are frustrated about reduced access to traditional spots.\n\nYou need to decide how to keep the program effective while addressing community concerns:",
+        "image": "sand_channel.png",
+        "text": "The sand channels are helping for now, but maintaining them is costly and storms keep shifting deposits unpredictably.",
         "options": [
-          { "desc": "Run community workshops with fishers and co-design management rules.", "target": "a" },
-          { "desc": "Provide partial compensation or alternative fishing areas.", "target": "b" },
-          { "desc": "Remove restrictions to avoid conflict, risking new seagrass damage.", "target": "c" }
+          {
+            "desc": "Invest more in adaptive channel designs to improve effectiveness.",
+            "target": "a",
+            "outcome": "Upgraded channels redirected sand more effectively, protecting turtle nesting areas, but long-term costs kept rising."
+          },
+          {
+            "desc": "Maintain existing channels with minimal upgrades.",
+            "target": "b",
+            "outcome": "Some areas remained stable, but other habitats suffered as storms outpaced the limited system."
+          },
+          {
+            "desc": "Stop maintaining the channels and focus resources elsewhere.",
+            "target": "c",
+            "outcome": "Channels failed, erosion accelerated, and the habitats declined more quickly."
+          }
         ]
       },
       "bb": {
-        "image": "",
-        "text": "Seagrass replanting has taken root in several areas, and fish fry have been spotted among the shoots. However, storms and careless boating continue to damage fragile young beds.\n\nYou must choose how to strengthen the replanting effort:",
+        "image": "sand_transport.png",
+        "text": "Sand relocation has bought time, but repeated storms mean the beaches need constant reinforcement. The town debates whether to continue.",
         "options": [
-          { "desc": "Pair seagrass plots with artificial reef structures for shelter.", "target": "a" },
-          { "desc": "Keep restoration small and protected while scaling up slowly.", "target": "b" },
-          { "desc": "Suspend the project and divert funding elsewhere.", "target": "c" }
+          {
+            "desc": "Scale up relocation with bigger projects to keep beaches wide.",
+            "target": "a",
+            "outcome": "Wider beaches reassured residents and tourists, but the ecological damage deepened and costs became unsustainable."
+          },
+          {
+            "desc": "Combine relocation with partial habitat restoration.",
+            "target": "b",
+            "outcome": "Some habitats were restored alongside relocation, but the balance was fragile, and the double expense stretched town finances thin."
+          },
+          {
+            "desc": "Phase out sand relocation and explore other protection options.",
+            "target": "c",
+            "outcome": "Beaches narrowed again, frustrating locals, but ecosystems began a slow, partial recovery."
+          }
         ]
       },
       "ca": {
-        "image": "",
-        "text": "Reef restoration brought more divers to the area and increased fish abundance. But boat anchors and heavy traffic continue to stress fragile corals near the hotels.\n\nYou must decide how to balance reef access with long-term health:",
+        "image": "eco_tour.png",
+        "text": "Eco\u2011tourism is growing, and recent shoreline changes have altered local wave conditions. In several sheltered pockets, seagrass and some corals are showing early recovery, which is modestly reducing wave energy in those areas. Elsewhere, conditions remain stressful.",
         "options": [
-          { "desc": "Establish marine protected zones with strict no-anchor policies.", "target": "a" },
-          { "desc": "Expand mooring systems to limit direct coral damage.", "target": "b" },
-          { "desc": "Keep reefs open to all traffic, prioritising tourism numbers.", "target": "c" }
+          {
+            "desc": "Support eco-tourism with strict guidelines and visitor limits to protect recovering habitats.",
+            "target": "a",
+            "outcome": "Clear rules helped safeguard the recovering seagrass and coral, creating a stronger natural barrier against waves. Tourism remained steady, though some businesses pushed back against new limits."
+          },
+          {
+            "desc": "Encourage more tourism to capitalise on the recovery and economic gains.",
+            "target": "b",
+            "outcome": "Tourism grew quickly, but the extra boat traffic and anchors stressed the fragile recovery. The habitats weakened again, and erosion slowly returned."
+          },
+          {
+            "desc": "Rely on natural recovery without new management, letting ecosystems and tourism balance themselves.",
+            "target": "c",
+            "outcome": "At first, seagrass and corals continued to improve, but without protection the recovery was uneven. Some areas thrived, while others degraded under pressure, leaving the coast only partially defended."
+          }
         ]
       },
       "cb": {
-        "image": "",
-        "text": "Sand transport widened the beach and brought in more tourists, but storms quickly washed much of it away. Costs are rising, and the shoreline still feels unstable.\n\nYou must choose how to improve the sustainability of beach maintenance:",
+        "image": "beach.png",
+        "text": "Sand nourishment widened the beaches and brought more tourists, but storms continue to strip sand away. Each replenishment costs more, and the community is debating how long this strategy can last.",
         "options": [
-          { "desc": "Combine sand replenishment with dune restoration and planting.", "target": "a" },
-          { "desc": "Continue importing sand regularly despite high costs.", "target": "b" },
-          { "desc": "Stop sand works and allow natural erosion to continue.", "target": "c" }
+          {
+            "desc": "Shift funding into natural defences like seagrass and mangroves to stabilise the shoreline.",
+            "target": "a",
+            "outcome": "Switching to nature\u2011based solutions reduced long\u2011term costs and improved coastal protection. Dune vegetation and turtle\u2011friendly lighting standards were introduced, but ecosystems took time to establish, and tourism dipped during the transition."
+          },
+          {
+            "desc": "Keep funding regular sand nourishment projects despite the expense.",
+            "target": "b",
+            "outcome": "The beaches stayed wide and tourism strong, but the costs escalated each year. Eventually, the town faced financial strain while the underlying problem of rising seas remained."
+          },
+          {
+            "desc": "Build a seawall as a last attempt to save the town from rising seas.",
+            "target": "c",
+            "outcome": "The seawall brought temporary relief, but it further interrupted sand transport. Flanking erosion developed at the ends, toe scour deepened in front of the wall, and stronger storms eventually overtopped sections, leaving the town exposed again."
+          }
         ]
       }
     },
     "3": {
       "aaa": {
-        "image": "",
-        "text": "Restricting boats in shallow areas allowed seagrass beds to recover, stabilising sediments and supporting juvenile fish. Local waters are clearer and fish stocks are rising, though fishers must now adapt to smaller fishing grounds.\n\nTo support both livelihoods and ecosystems, what should the town do next?",
+        "image": "citizen_science.png",
+        "text": "Seagrass is recovering. How will you secure its long-term future?",
         "options": [
-          { "desc": "Develop eco-tour guiding and monitoring jobs for local fishers.", "target": "a" },
-          { "desc": "Maintain current restrictions without community support programs.", "target": "b" }
+          {
+            "desc": "Involve citizens in monitoring and care.",
+            "target": "a",
+            "outcome": "Community science programs built stewardship and ensured ongoing recovery, though results depended on strong participation."
+          },
+          {
+            "desc": "Rely on professional teams only.",
+            "target": "b",
+            "outcome": "Experts kept habitats stable, but locals felt excluded, weakening long-term community support."
+          }
         ]
       },
       "aab": {
-        "image": "",
-        "text": "Shared-use zones allowed some restoration but frequent conflicts slowed progress. Seagrass recovery is patchy, and fish stocks are only slightly improved.\n\nTo push recovery further, what action should you take?",
+        "image": "expand.png",
+        "text": "Recovery has begun, but could be expanded. What\u2019s next?",
         "options": [
-          { "desc": "Expand restoration zones and improve enforcement.", "target": "a" },
-          { "desc": "Scale back restoration to keep conflict low.", "target": "b" }
+          {
+            "desc": "Expand restoration zones and protect new areas.",
+            "target": "a",
+            "outcome": "Broader restoration improved biodiversity and resilience, but required stricter rules and more funding."
+          },
+          {
+            "desc": "Transplant seagrass from other areas.",
+            "target": "b",
+            "outcome": "Transplants boosted growth in key spots, but survival rates were low and donor areas weakened."
+          }
+        ]
+      },
+      "aac": {
+        "image": "decline.png",
+        "text": "Unrestricted boating is causing decline. Do you act?",
+        "options": [
+          {
+            "desc": "Reintroduce restrictions quickly.",
+            "target": "a",
+            "outcome": "Limits reduced damage and allowed partial recovery, but earlier losses were hard to reverse."
+          },
+          {
+            "desc": "Ignore the issue.",
+            "target": "b",
+            "outcome": "Seagrass collapsed, reducing fish stocks and natural protection. The town became highly exposed."
+          }
         ]
       },
       "aba": {
-        "image": "",
-        "text": "Adding dunes and mangroves alongside the seawall reduced erosion and created new habitats for birds and crabs. The coast looks more natural, but requires maintenance and monitoring.\n\nHow should the town continue this approach?",
+        "image": "balance.png",
+        "text": "Artificial reefs are in place. How should the town support nature long-term?",
         "options": [
-          { "desc": "Expand natural buffers along more of the coastline.", "target": "a" },
-          { "desc": "Maintain current areas without expanding further.", "target": "b" }
+          {
+            "desc": "Pair reefs with habitat restoration projects.",
+            "target": "a",
+            "outcome": "By combining reefs with seagrass and mangroves, ecosystems became stronger and more resilient. But these projects demanded steady resources."
+          },
+          {
+            "desc": "Keep focusing only on reefs.",
+            "target": "b",
+            "outcome": "Fish remained around reefs, but natural habitats kept declining, leaving the coast vulnerable."
+          }
         ]
       },
       "abb": {
-        "image": "",
-        "text": "Sand replenishment kept beaches wide for tourists, but erosion still occurs elsewhere and costs are high. Wildlife remains at risk in heavily eroded zones.\n\nWhat strategy should the town adopt next?",
+        "image": "marine_zone.png",
+        "text": "Protected areas improved fish stocks, but some fishers are unhappy. What now?",
         "options": [
-          { "desc": "Combine replenishment with dune vegetation for longer-term stability.", "target": "a" },
-          { "desc": "Reduce replenishment frequency to save money.", "target": "b" }
+          {
+            "desc": "Work with fishers to build alternative livelihoods.",
+            "target": "a",
+            "outcome": "Tensions eased as eco-tourism jobs and sustainable fishing opportunities grew, but the transition took effort."
+          },
+          {
+            "desc": "Ignore their concerns.",
+            "target": "b",
+            "outcome": "Conflict deepened, leading to protests and weakened support for conservation."
+          }
+        ]
+      },
+      "abc": {
+        "image": "expensive.png",
+        "text": "Reef expansion helped but drained funds. How do you proceed?",
+        "options": [
+          {
+            "desc": "Pair reefs with cheaper nature-based methods.",
+            "target": "a",
+            "outcome": "Mangroves and seagrass reduced costs and improved protection, though results were slower than reefs alone."
+          },
+          {
+            "desc": "Keep funding reef expansion heavily.",
+            "target": "b",
+            "outcome": "The town fell into debt maintaining artificial reefs, and projects collapsed when funding ran out."
+          }
         ]
       },
       "baa": {
-        "image": "",
-        "text": "Workshops improved trust between fishers and scientists. Compliance with rules improved, and seagrass recovery accelerated. The community is more aware of the ecosystem’s value.\n\nHow can this momentum be carried forward?",
+        "image": "storm_channel.png",
+        "text": "The upgraded sand channels are effective, but a powerful storm season is approaching. The town must prepare.",
         "options": [
-          { "desc": "Expand education into schools and tourism operators.", "target": "a" },
-          { "desc": "Keep workshops focused only on fishers.", "target": "b" }
+          {
+            "desc": "Reinforce channels and commit to heavy maintenance.",
+            "target": "a",
+            "outcome": "Channels held through the storms, saving turtle nesting beaches, but the costs nearly bankrupted the town."
+          },
+          {
+            "desc": "Maintain only critical channels and let less vital areas erode.",
+            "target": "b",
+            "outcome": "Some beaches survived, but secondary habitats eroded, weakening natural resilience for the future."
+          }
         ]
       },
       "bab": {
-        "image": "",
-        "text": "Compensation programs kept tensions low, but the town’s budget is heavily strained. While seagrass beds show early signs of recovery, funding gaps risk the project’s future.\n\nHow should the town proceed?",
+        "image": "sand_restore.png",
+        "text": "Combining relocation with restoration has shown promise, but requires scaling up.",
         "options": [
-          { "desc": "Apply for external grants and link compensation to restoration success.", "target": "a" },
-          { "desc": "Phase out compensation while maintaining some protections.", "target": "b" }
+          {
+            "desc": "Expand restoration and continue relocation side by side.",
+            "target": "a",
+            "outcome": "The dual strategy slowed habitat loss, but long-term costs left the town financially unstable."
+          },
+          {
+            "desc": "Cut restoration and rely only on relocation for speed.",
+            "target": "b",
+            "outcome": "Relocation kept beaches wide, but without restoration, habitats collapsed, leaving the coast more exposed each year."
+          }
+        ]
+      },
+      "bac": {
+        "image": "eroded_beach.png",
+        "text": "Where sand channels or relocation were abandoned, the seawall continued to block natural replenishment. Turtle nesting beaches and seagrass meadows are eroding rapidly; residents want a decision before the next storm season.",
+        "options": [
+          {
+            "desc": "Launch emergency habitat restoration with sand bypass systems.",
+            "target": "a",
+            "outcome": "Some habitats stabilised, but the fixes came too late to prevent major losses, and costs were extreme."
+          },
+          {
+            "desc": "Accept the loss of habitats and maintain only hard defences.",
+            "target": "b",
+            "outcome": "The seawall protected the town for now, but without habitats, storms increasingly overtopped the wall, causing severe damage."
+          }
         ]
       },
       "bba": {
-        "image": "",
-        "text": "Pairing seagrass with artificial reefs gave young plants shelter from storms, helping beds expand faster. Fish numbers are visibly increasing in the area.\n\nWhat should the town focus on now?",
+        "image": "levy.png",
+        "text": "Scaling up relocation has pushed costs to the limit. The town considers new funding mechanisms.",
         "options": [
-          { "desc": "Promote eco-tourism around seagrass and reef areas.", "target": "a" },
-          { "desc": "Keep restoration low-profile and limited to science projects.", "target": "b" }
+          {
+            "desc": "Introduce a visitor levy to fund coastal works.",
+            "target": "a",
+            "outcome": "The levy funded ongoing nourishment, but higher prices reduced tourist numbers and local businesses had to adapt."
+          },
+          {
+            "desc": "Cut public services to keep paying for nourishment.",
+            "target": "b",
+            "outcome": "Nourishment continued for a time, but service cuts hurt residents, and a severe storm erased much of the beach in a single night."
+          }
         ]
       },
       "bbb": {
-        "image": "",
-        "text": "Small restoration plots survived storms but progress across the bay is slow. Fish are returning, but habitats remain fragmented.\n\nWhat should your next step be?",
+        "image": "community_restore.png",
+        "text": "Relocation and partial restoration are both underway, but budgets are thin and progress uneven.",
         "options": [
-          { "desc": "Expand into larger restoration plots with stronger protection.", "target": "a" },
-          { "desc": "Continue with small-scale cautious planting.", "target": "b" }
+          {
+            "desc": "Shift restoration to a community-led model to lower costs.",
+            "target": "a",
+            "outcome": "Community stewardship improved local buy-in and reduced expenses, yet full recovery still lagged behind storm impacts."
+          },
+          {
+            "desc": "Pause restoration to prioritise relocation logistics.",
+            "target": "b",
+            "outcome": "Beaches looked maintained, but without restoration the habitats declined, making each storm season more damaging."
+          }
+        ]
+      },
+      "bbc": {
+        "image": "living_shoreline.png",
+        "text": "With relocation phased out, the town tests other protections.",
+        "options": [
+          {
+            "desc": "Pilot a living shoreline using dunes, vegetation, and coir logs.",
+            "target": "a",
+            "outcome": "The living shoreline began to build natural resilience, but benefits accrued slowly compared to engineering fixes."
+          },
+          {
+            "desc": "Rely on seawall maintenance as the primary defence.",
+            "target": "b",
+            "outcome": "The seawall held for now, but without natural buffers, overtopping during extreme storms became more frequent and costly."
+          }
         ]
       },
       "caa": {
-        "image": "",
-        "text": "Marine protected zones allowed coral to rebound and fish to thrive, attracting eco-tourists. However, some operators feel restricted in their activities.\n\nHow should the protection be managed going forward?",
+        "image": "eco_guidelines.png",
+        "text": "Guidelines have reduced pressure on recovering seagrass and coral, but enforcing them is expensive and tourism operators are divided.",
         "options": [
-          { "desc": "Expand protected areas further offshore.", "target": "a" },
-          { "desc": "Keep the zones limited to current boundaries.", "target": "b" }
+          {
+            "desc": "Keep strict rules and invest more in eco-management.",
+            "target": "a",
+            "outcome": "Tourism remained steady and habitats slowly strengthened into a natural barrier, but some businesses closed under the tighter restrictions."
+          },
+          {
+            "desc": "Relax guidelines to attract more visitors quickly.",
+            "target": "b",
+            "outcome": "Visitor numbers surged, increasing anchor damage and trampling. When marine heatwaves struck, stressed corals lacked resilience; coral cover declined and seagrass thinned, and erosion soon returned."
+          }
         ]
       },
       "cab": {
-        "image": "",
-        "text": "Mooring points reduced direct anchor damage and reef condition has slightly improved. However, heavy traffic still stresses the ecosystem.\n\nWhat is the best next step?",
+        "image": "over_tourism.png",
+        "text": "Tourism was pushed too far, and recovering habitats are showing signs of stress. The town must decide how to respond.",
         "options": [
-          { "desc": "Add more moorings and expand protected reef corridors.", "target": "a" },
-          { "desc": "Leave the system unchanged, keeping access unrestricted.", "target": "b" }
+          {
+            "desc": "Reintroduce visitor limits and protect sensitive sites.",
+            "target": "a",
+            "outcome": "Restrictions slowed the decline, but much of the earlier recovery was lost, leaving ecosystems weaker than before."
+          },
+          {
+            "desc": "Ignore warnings and continue expanding tourism.",
+            "target": "b",
+            "outcome": "Tourism peaked briefly, but cumulative physical damage and subsequent heatwaves drove reef decline. With attractions degraded, visitors stopped coming."
+          }
+        ]
+      },
+      "cac": {
+        "image": "hands_off.png",
+        "text": "Without clear management, some habitats thrived while others degraded. The uneven recovery left parts of the coastline vulnerable.",
+        "options": [
+          {
+            "desc": "Step in late with new protections to safeguard the stronger habitats.",
+            "target": "a",
+            "outcome": "The healthier sites were preserved, but weaker areas were lost, leaving a patchwork coast with mixed resilience."
+          },
+          {
+            "desc": "Continue leaving nature and tourism to balance themselves.",
+            "target": "b",
+            "outcome": "Tourism pressures grew unchecked, and over time the fragile recovery collapsed, leaving the town exposed once again."
+          }
         ]
       },
       "cba": {
-        "image": "",
-        "text": "Pairing dune building and vegetation with sand replenishment reduced erosion and created a more natural-looking beachfront. Tourists enjoy the landscape and it is more resilient to storms.\n\nWhat should you do next?",
+        "image": "nature_shift.png",
+        "text": "Funds were shifted into seagrass and mangrove projects, but the transition away from nourishment slowed tourism.",
         "options": [
-          { "desc": "Expand dune restoration along the full beach.", "target": "a" },
-          { "desc": "Maintain only the current dune areas.", "target": "b" }
+          {
+            "desc": "Stay committed to nature-based solutions despite the economic dip.",
+            "target": "a",
+            "outcome": "Habitats strengthened into effective natural barriers over time, though the town endured lean years before stability returned."
+          },
+          {
+            "desc": "Return to sand nourishment to quickly boost tourism again.",
+            "target": "b",
+            "outcome": "Tourism rebounded quickly, but ecosystems stalled. Without healthy vegetation and seagrass to bind sediments, erosion surged once funding lapsed, and beaches narrowed sharply."
+          }
         ]
       },
       "cbb": {
-        "image": "",
-        "text": "Continuing heavy sand transport kept beaches wide but drained the budget. Erosion shifted further down the coast, leaving vulnerable areas exposed.\n\nHow should the town respond?",
+        "image": "sand_only.png",
+        "text": "Ongoing sand nourishment kept tourists happy, but the costs kept climbing and the town\u2019s budget is stretched to breaking point.",
         "options": [
-          { "desc": "Seek external funding to sustain replenishment projects.", "target": "a" },
-          { "desc": "Abandon large-scale replenishment to cut costs.", "target": "b" }
+          {
+            "desc": "Shift late into hybrid protection (sand plus limited habitat restoration).",
+            "target": "a",
+            "outcome": "Hybrid methods slowed erosion more effectively, but years of dependence on sand had already degraded ecosystems, limiting recovery."
+          },
+          {
+            "desc": "Keep relying only on sand nourishment.",
+            "target": "b",
+            "outcome": "Funds eventually ran out, and without healthy habitats, the beaches eroded faster than they could be replaced. The coast was left bare."
+          }
+        ]
+      },
+      "cbc": {
+        "image": "storm_wall.png",
+        "text": "The seawall gave the town short-term safety, but strong storms are now overtopping it. The community must decide what to do.",
+        "options": [
+          {
+            "desc": "Invest in emergency reinforcements and higher walls.",
+            "target": "a",
+            "outcome": "The higher walls held for a while, but costs soared and each new storm tested their limits. Eventually, maintenance collapsed under pressure."
+          },
+          {
+            "desc": "Accept retreat and begin relocating inland.",
+            "target": "b",
+            "outcome": "Relocation was painful and costly, but it gave the community a long-term solution. The original shoreline was abandoned to the sea."
+          }
         ]
       }
     }

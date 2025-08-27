@@ -8,12 +8,13 @@ export default function Game({ setPage }) {
 
     const [path, setPath] = useState('')
     const scenario = scenarios.layers[path.length]?.[path]
+    const [outcome, setOutcome] = useState('')
 
     return (
         <div className="stack sm:p-0 sm:m-0 md:p-6 md:m-2 m-black">
             {scenario ?
-                <Scenario scenario={scenario} path={path} setPath={setPath}/> :
-                <GameEnd path={path} setPage={setPage}/>
+                <Scenario scenario={scenario} path={path} setPath={setPath} outcome={outcome} setOutcome={setOutcome}/> :
+                <GameEnd path={path} setPage={setPage} outcome={outcome}/>
             }
             <button
                 className="btn btn-secondary"

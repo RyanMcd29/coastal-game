@@ -2,17 +2,19 @@ import { useEffect, useState } from "react";
 import ScenBtn from "./scenBtn";
 import Image from "next/image";
 
-export default function Scenario({scenario, path, setPath, setPage}) {
+export default function Scenario({scenario, path, setPath, outcome, setOutcome}) {
     const [showOptions, setShowOptions] = useState(false);
-    const letters = scenario.text.split("");
+
+    const letters = ((outcome ? outcome + '\n\n' : '') + scenario.text).split("");
+
     const animKey = `${path}::${scenario.text}`;
 
     useEffect(() => {
         setShowOptions(false);
-        const duration = scenario.text.length * 20 + 500;
+        const duration = (scenario.text+outcome).length * 20 + 500;
         const timeout = setTimeout(() => setShowOptions(true), duration);
         return () => clearTimeout(timeout);
-    }, [scenario.text]);
+    }, [scenario.text, outcome]);
 
     return (
         <div className="flex flex-wrap w-full border-4 border-black bg-white flex-auto whitespace-pre-line text-xs max-sm:border-none">
@@ -21,8 +23,8 @@ export default function Scenario({scenario, path, setPath, setPage}) {
                     className="mx-auto my-auto max-sm:48 image-fit aspect-square object-cover" 
                     src={`scenario_images/${scenario.image}`} 
                     alt="scenario image" 
-                    width={1000} 
-                    height={1000}
+                    width={1024} 
+                    height={1024}
                 />
             </div>
             <div className="mx-auto my-auto w-3/5 max-sm:w-full bg-white max-sm:p-2 md:p-8">
@@ -44,7 +46,7 @@ export default function Scenario({scenario, path, setPath, setPage}) {
                     {(() => {
                         const shuffledOptions = [...(scenario.options || [])].sort(() => Math.random() - 0.5);
                         return shuffledOptions.map((option, i) => (
-                            <ScenBtn key={i} option={option} path={path} setPath={setPath} />
+                            <ScenBtn key={i} option={option} path={path} setPath={setPath} setOutcome={setOutcome}/>
                         ));
                     })()}
                 </div>

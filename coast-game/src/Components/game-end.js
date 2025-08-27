@@ -33,9 +33,9 @@ const getOutcome = (gamepath) => {
     }) 
 }
 
-export default function GameEnd({ path, setPage }) {
+export default function GameEnd({ path, setPage, outcome }) {
     const points = calcScore(path);
-    const outcome = getOutcome(path)
+    const endtext = getOutcome(path)
     const [name, setName] = useState("");
     const [leaderboard, setLeaderboard] = useState([]);
     useEffect(() => {
@@ -53,14 +53,15 @@ export default function GameEnd({ path, setPage }) {
             <div className="image-container mx-auto my-auto p-4 w-2/5">
                 <Image 
                     className="mx-auto my-auto max-sm:48 image-fit aspect-square object-cover" 
-                    src={`scenario_images/${outcome.image}`} 
+                    src={`scenario_images/${endtext.image}`} 
                     alt="scenario image" 
                     width={1000} 
                     height={1000}
                 />
             </div>
             <div className="mx-auto my-auto w-3/5 max-sm:w-full bg-white text-xs p-8">
-                <p>{outcome.text}</p>
+                <p style={{"borderBottom": "solid"}} className="text-black text-center p-4 pb-6">{outcome}</p>
+                <p className="mt-6">{endtext.text}</p>
                 <div className='flex flex-wrap mt-6'>
                 <p className="text-black w-full">You Scored: {points}</p>
                     <input
