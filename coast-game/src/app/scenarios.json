@@ -3,22 +3,22 @@
     "0": {
       "": {
         "image": "dolphin.png",
-        "text": "Rising seas and loss of reliable fishing sources are threatening a small coastal town. Some locals push for a study to weigh up restoring natural habitats, others demand strong barriers to protect homes immediately, while a few are pushing for sand nourishment on the beach to push back the shoreline and to make the town more attractive for visitors. \n\n The local council has called on you, a coastal engineer, to survey the coastline and assess any structures or intervention methods that could secure the town's future. \n\n You only have limited funds, click/tap on a option below to decide on the course of action you want to take.",
+        "text": "Year +0\n\nRising seas and loss of reliable fishing sources are threatening a small coastal town. Some locals want a study to explore restoring natural habitats, others demand strong barriers to protect homes immediately, and a few suggest placing more sand on the beach to push back the shoreline and attract visitors.\n\nThe local council has asked you, a coastal engineer, to survey the coastline and recommend actions that could secure the town's future. The community hopes to prevent relocation within the next 10 years if possible.\n\nYou only have limited funds, click or tap on an option below to decide on the course of action you want to take.",
         "options": [
           {
             "desc": "Survey local habitats and plan ecosystem restoration as a natural defence.",
             "target": "a",
-            "outcome": "Your surveys revealed that reefs and seagrass had declined, weakening natural coastal defences. While this opened the way for habitat-based recovery, progress would take time and storms remained a near-term threat."
+            "outcome": "Year +0 → +2\n\nYour surveys show that reefs and seagrass have declined, which has weakened natural coastal defences. Mangroves and dunes are also patchy. This creates a real chance for recovery, but storms remain a near-term threat."
           },
           {
-            "desc": "Construct a seawall to defend the town from rising seas and erosion.",
+            "desc": "Consider building a seawall to defend the town from rising seas and erosion.",
             "target": "b",
-            "outcome": "The seawall quickly protected homes and businesses, reassuring residents. Yet, it disrupted natural sand flows, causing erosion elsewhere and placing additional stress on nearby habitats."
+            "outcome": "Year +0 → +2\n\nThe council agrees to explore a seawall. While it can protect homes quickly, it may block sand movement, risking erosion that could damage turtle nesting beaches and seagrass meadows nearby. A decision is needed soon."
           },
           {
-            "desc": "Transport sand to the eroded beach, to widen the shoreline and support tourism.",
+            "desc": "Transport sand to the eroded beach to widen the shoreline and support tourism.",
             "target": "c",
-            "outcome": "New sand initially widened the beach and boosted visitor numbers. However, frequent storms rapidly stripped the sand from the beach, requiring repeated projects that strained the budget while leaving underlying erosion drivers unaddressed."
+            "outcome": "Year +0 → +2\n\nBringing in sand widens the beach and increases visitor numbers, but storms quickly wash it away. Without ongoing projects, this approach is expensive and leaves ecosystems under stress."
           }
         ]
       }
@@ -26,49 +26,49 @@
     "1": {
       "a": {
         "image": "house.png",
-        "text": "To revitalise habitats and strengthen the shoreline, the community must decide how to act on your survey results.",
+        "text": "To strengthen the shoreline, the community must now choose how to act on your survey results.",
         "options": [
           {
-            "desc": "Restore seagrass meadows. Recovery will take time, but they provide long-term protection and habitat.",
+            "desc": "Restore seagrass, mangroves, and dunes as natural defences. (Best chance to avoid relocation and protect ecosystems by Year 10)",
             "target": "a",
-            "outcome": "Seagrass planting began stabilising sediments and creating nursery areas for fish. However, recovery was slow, and locals grew impatient waiting for visible benefits."
+            "outcome": "Year +2 → +4\n\nSeagrass planting begins, but recovery will take 5–10 years. Mangroves and dune plants grow faster, often within 3–7 years, and already reduce some wave energy. With protection and patience, this pathway can keep the town safe while ecosystems recover."
           },
           {
-            "desc": "Construct an artificial reef to reduce wave energy and create habitat while natural systems recover.",
+            "desc": "Construct an artificial reef to reduce wave energy while natural systems recover.",
             "target": "b",
-            "outcome": "The artificial reef gave quick protection from waves and attracted some marine life, but it was costly and offered only limited ecological benefits compared to natural habitats."
+            "outcome": "Year +2 → +4\n\nArtificial reef modules provide some shelter and attract marine life. However, large storms still reach the coast, and long-term safety would require extra works. The town is safer for now, but ecosystems gain less than with full restoration."
           }
         ]
       },
       "b": {
         "image": "seawall.png",
-        "text": "The seawall has shielded the town, but it is blocking the natural flow of sand. Beaches are no longer being replenished, leaving seagrass beds and turtle nesting areas exposed to erosion. Without action, these habitats could be lost.",
+        "text": "The seawall could protect homes quickly, but it will change the way sand moves and harm nearby ecosystems.",
         "options": [
           {
-            "desc": "Redirect sand with managed channels to restore natural flow and protect nearby habitats.",
+            "desc": "Reconsider the seawall and move toward nature-based resilience instead.",
             "target": "a",
-            "outcome": "Sand channels helped restore the flow, slowing erosion on turtle nesting beaches and seagrass meadows. Yet, they required constant upkeep, and the community worried about the ongoing expense."
+            "outcome": "Year +2 → +4\n\nConcerns about erosion and habitat damage are raised. Shifting to a mix of mangroves, dunes, and seagrass offers a slower but healthier way to protect the town over time."
           },
           {
-            "desc": "Transport sand directly to critical areas to reinforce beaches quickly.",
+            "desc": "Proceed with the seawall and prepare to manage sand movement later.",
             "target": "b",
-            "outcome": "Sand relocation provided short-term relief for turtle nesting beaches, but it disrupted ecosystems and had to be repeated after each major storm, draining resources."
+            "outcome": "Year +2 → +4\n\nThe wall is built and homes are protected. By Year 10 the town is likely still safe, but costs rise as sand must be moved around the wall and ecosystems continue to decline."
           }
         ]
       },
       "c": {
         "image": "hotel.png",
-        "text": "Tourism is seen as the quickest way to bring money into the town. Some argue for eco-tourism built around protecting natural areas, while others want to widen sandy beaches to attract more visitors. Both bring short-term benefits, but neither directly addresses sea level rise.",
+        "text": "Tourism is seen as the quickest way to bring money into the town.",
         "options": [
           {
-            "desc": "Invest in eco\u2011tourism by protecting reefs, turtle nesting areas, and seagrass (e.g., moorings, no\u2011anchor zones, marine protected areas).",
+            "desc": "Invest in eco-tourism by protecting reefs, turtle nesting areas, and seagrass.",
             "target": "a",
-            "outcome": "Eco\u2011tourism brought divers, snorkellers, and wildlife enthusiasts. Moorings and no\u2011anchor zones reduced direct damage, and protected areas allowed fish stocks to grow. Yet, higher visitation still increased wear on fragile sites, and during marine heatwaves already\u2011stressed corals fared poorly."
+            "outcome": "Year +2 → +4\n\nEco-tourism grows and brings new income. Some habitats recover, but heatwaves damage corals. The town can still be protected later with other measures, but ecosystems are stressed."
           },
           {
-            "desc": "Transport sand to widen beaches, attract tourists, and give the impression of holding back rising seas.",
+            "desc": "Keep adding sand to widen beaches and attract tourists.",
             "target": "b",
-            "outcome": "Wider beaches created a tourism boom and gave locals the sense that sea level rise was being delayed. But storms quickly stripped the sand away, and repeating the process drained resources while the underlying risk remained."
+            "outcome": "Year +2 → +4\n\nWider beaches create a tourism boom, but storms remove the sand again. This approach can keep the town safe if money continues to flow, but it is not sustainable in the long term and ecosystems suffer."
           }
         ]
       }
@@ -76,127 +76,127 @@
     "2": {
       "aa": {
         "image": "seagrass.png",
-        "text": "Boats and storms continue to disturb fragile young seagrass beds. How will you strengthen recovery?",
+        "text": "Seagrass and young mangroves are fragile and need help to recover.",
         "options": [
           {
-            "desc": "Restrict boats from entering shallow seagrass areas.",
+            "desc": "Restrict boats and expand mangrove and dune planting. (Keeps no-relocation pathway and healthy ecosystems)",
             "target": "a",
-            "outcome": "Strict limits reduced propeller scarring allowing seagrass to regrow quickly. Water clarity improved and fish nursery function strengthened. Boaters, however, felt their freedoms were being taken away."
+            "outcome": "Year +4 → +6\n\nBoat restrictions reduce damage, and habitats recover more quickly. By Year 10 the town is safe, and natural systems continue to grow stronger, offering long-term protection."
           },
           {
-            "desc": "Offer moorings for boats and limit speeds in sensitive areas.",
+            "desc": "Offer moorings and limit speeds in sensitive areas.",
             "target": "b",
-            "outcome": "Moorings and speed limits cut some anchor damage and wake energy, and seagrass recovery began in patches. Progress remained uneven and required ongoing monitoring."
+            "outcome": "Year +4 → +6\n\nSome damage is avoided, and recovery improves in patches. By Year 10 the town can still be safe, but more costly works may be needed to back up weaker ecosystems."
           },
           {
             "desc": "Leave boat access unrestricted.",
             "target": "c",
-            "outcome": "Unrestricted access maintained convenience for boaters, but propeller scars and resuspended sediments expanded, suppressing seagrass recovery and weakening natural coastal protection."
+            "outcome": "Year +4 → +6\n\nOngoing damage weakens recovery. By Year 10 the town can only remain protected with heavy engineering, and ecosystems will be badly degraded."
           }
         ]
       },
       "ab": {
         "image": "art_reef.png",
-        "text": "The artificial reef is working, but fish numbers remain low. How will you restore stocks?",
+        "text": "The artificial reef helps in moderate conditions, but big storms still push waves onto the shore.",
         "options": [
           {
-            "desc": "Combine artificial reefs with seagrass restoration.",
+            "desc": "Add seagrass restoration and expand mangrove and dune planting.",
             "target": "a",
-            "outcome": "Together, reefs and seagrass created shelter plus nursery grounds, supporting recruitment and survival of juveniles. Coordination and monitoring costs were high."
+            "outcome": "Year +4 → +6\n\nCombining habitats with the reef improves protection. By Year 10 the town can stay safe with moderate ecosystem health, and costs are more manageable if rules are followed."
           },
           {
-            "desc": "Designate marine protected areas to reduce fishing pressure.",
+            "desc": "Create marine protected areas to rebuild fish stocks.",
             "target": "b",
-            "outcome": "Protected zones let fish mature and reproduce, improving populations over time. Still, some fishers opposed the restrictions and trust was strained."
+            "outcome": "Year +4 → +6\n\nFish populations improve and the reef becomes more alive. The town remains safe by Year 10 if shoreline buffers also grow, otherwise later engineering will be needed and trade-offs increase."
           },
           {
-            "desc": "Expand the artificial reef network.",
+            "desc": "Expand the artificial reef network only.",
             "target": "c",
-            "outcome": "Additional modules drew large schools quickly, but evidence suggested more fish were being attracted from natural reefs than produced anew. The network was costly to build and maintain, and some nearby natural sites declined."
+            "outcome": "Year +4 → +6\n\nMore modules attract fish, but they do little in the biggest storms and do not fix sand movement. The town can still be safe by Year 10 with stronger engineering, but ecosystems decline and expenses rise."
           }
         ]
       },
       "ba": {
-        "image": "sand_channel.png",
-        "text": "The sand channels are helping for now, but maintaining them is costly and storms keep shifting deposits unpredictably.",
+        "image": "erosion.png",
+        "text": "Storm clusters accelerate erosion and expose homes along the most at-risk fringe.",
         "options": [
           {
-            "desc": "Invest more in adaptive channel designs to improve effectiveness.",
+            "desc": "Choose nature-first and move the most exposed fringe (managed retreat).",
             "target": "a",
-            "outcome": "Upgraded channels redirected sand more effectively, protecting turtle nesting areas, but long-term costs kept rising."
+            "outcome": "Year +4 → +6\n\nRelocating the highest-risk homes creates space for mangroves, dunes, and seagrass to grow. The town core remains safe by Year 10, and ecosystems improve."
           },
           {
-            "desc": "Maintain existing channels with minimal upgrades.",
+            "desc": "Use living shorelines plus targeted sand to hold the town core.",
             "target": "b",
-            "outcome": "Some areas remained stable, but other habitats suffered as storms outpaced the limited system."
+            "outcome": "Year +4 → +6\n\nMangroves and dunes are strengthened and sand is placed where it helps most. With steady funding and some hard structures, the town core stays safe by Year 10 and ecosystems recover to a moderate level."
           },
           {
-            "desc": "Stop maintaining the channels and focus resources elsewhere.",
+            "desc": "Invest in habitat recovery only and avoid interim protection.",
             "target": "c",
-            "outcome": "Channels failed, erosion accelerated, and the habitats declined more quickly."
+            "outcome": "Year +4 → +6\n\nNatural buffers grow slowly and homes remain exposed in the meantime. Without engineering or managed retreat, severe events could force larger relocations later."
           }
         ]
       },
       "bb": {
-        "image": "sand_transport.png",
-        "text": "Sand relocation has bought time, but repeated storms mean the beaches need constant reinforcement. The town debates whether to continue.",
+        "image": "wall_strong.png",
+        "text": "The seawall reassures residents but changes sand movement and harms habitats nearby.",
         "options": [
           {
-            "desc": "Scale up relocation with bigger projects to keep beaches wide.",
+            "desc": "Install sand bypass systems to move sand around the wall.",
             "target": "a",
-            "outcome": "Wider beaches reassured residents and tourists, but the ecological damage deepened and costs became unsustainable."
+            "outcome": "Year +4 → +6\n\nBypass pumps restore some sand flow. The town remains safe by Year 10, but costs stay high and ecosystems are only partly stable."
           },
           {
-            "desc": "Combine relocation with partial habitat restoration.",
+            "desc": "Schedule regular sand nourishment around the seawall.",
             "target": "b",
-            "outcome": "Some habitats were restored alongside relocation, but the balance was fragile, and the double expense stretched town finances thin."
+            "outcome": "Year +4 → +6\n\nNew sand keeps beaches wider for a time. The town is safe by Year 10, but budgets are stretched and ecosystems remain under pressure from constant works."
           },
           {
-            "desc": "Phase out sand relocation and explore other protection options.",
+            "desc": "Focus on the wall’s integrity and accept ecosystem losses.",
             "target": "c",
-            "outcome": "Beaches narrowed again, frustrating locals, but ecosystems began a slow, partial recovery."
+            "outcome": "Year +4 → +6\n\nThe town is likely held in place by Year 10, but turtle nesting and seagrass meadows are mostly lost, and the wall can still be overtopped in the strongest storms."
           }
         ]
       },
       "ca": {
         "image": "eco_tour.png",
-        "text": "Eco\u2011tourism is growing, and recent shoreline changes have altered local wave conditions. In several sheltered pockets, seagrass and some corals are showing early recovery, which is modestly reducing wave energy in those areas. Elsewhere, conditions remain stressful.",
+        "text": "Tourism grows. The town must balance income with protecting fragile habitats.",
         "options": [
           {
-            "desc": "Support eco-tourism with strict guidelines and visitor limits to protect recovering habitats.",
+            "desc": "Keep strict eco-guidelines and add shoreline buffers later.",
             "target": "a",
-            "outcome": "Clear rules helped safeguard the recovering seagrass and coral, creating a stronger natural barrier against waves. Tourism remained steady, though some businesses pushed back against new limits."
+            "outcome": "Year +4 → +6\n\nRules limit damage and help recovery. With mangroves, dunes, or selective hardening added later, the town remains safe by Year 10 and ecosystems hold at a moderate level."
           },
           {
-            "desc": "Encourage more tourism to capitalise on the recovery and economic gains.",
+            "desc": "Push for more visitors quickly to maximise income.",
             "target": "b",
-            "outcome": "Tourism grew quickly, but the extra boat traffic and anchors stressed the fragile recovery. The habitats weakened again, and erosion slowly returned."
+            "outcome": "Year +4 → +6\n\nHeavy tourism stresses habitats and weakens resilience. The town can still be held by Year 10 with engineering, but ecosystems decline and costs rise."
           },
           {
-            "desc": "Rely on natural recovery without new management, letting ecosystems and tourism balance themselves.",
+            "desc": "Let nature recover on its own without new rules.",
             "target": "c",
-            "outcome": "At first, seagrass and corals continued to improve, but without protection the recovery was uneven. Some areas thrived, while others degraded under pressure, leaving the coast only partially defended."
+            "outcome": "Year +4 → +6\n\nRecovery is uneven and some areas remain exposed. To keep the town safe by Year 10, heavier engineering will be needed, with larger ecological trade-offs."
           }
         ]
       },
       "cb": {
         "image": "beach.png",
-        "text": "Sand nourishment widened the beaches and brought more tourists, but storms continue to strip sand away. Each replenishment costs more, and the community is debating how long this strategy can last.",
+        "text": "Beach nourishment boosts width but needs repeating after storms.",
         "options": [
           {
-            "desc": "Shift funding into natural defences like seagrass and mangroves to stabilise the shoreline.",
+            "desc": "Shift toward nature-based defences and reinforce key gaps.",
             "target": "a",
-            "outcome": "Switching to nature\u2011based solutions reduced long\u2011term costs and improved coastal protection. Dune vegetation and turtle\u2011friendly lighting standards were introduced, but ecosystems took time to establish, and tourism dipped during the transition."
+            "outcome": "Year +4 → +6\n\nSeagrass, mangroves, and dunes improve long-term stability, and light structures fill weak points. The town stays safe by Year 10 with better ecosystem outcomes and more predictable costs."
           },
           {
-            "desc": "Keep funding regular sand nourishment projects despite the expense.",
+            "desc": "Continue frequent nourishment cycles.",
             "target": "b",
-            "outcome": "The beaches stayed wide and tourism strong, but the costs escalated each year. Eventually, the town faced financial strain while the underlying problem of rising seas remained."
+            "outcome": "Year +4 → +6\n\nThe town remains safe by Year 10 if funding continues, but costs escalate and ecosystems are stressed by repeated sand placement."
           },
           {
-            "desc": "Build a seawall as a last attempt to save the town from rising seas.",
+            "desc": "Switch to a seawall to lock in protection.",
             "target": "c",
-            "outcome": "The seawall brought temporary relief, but it further interrupted sand transport. Flanking erosion developed at the ends, toe scour deepened in front of the wall, and stronger storms eventually overtopped sections, leaving the town exposed again."
+            "outcome": "Year +4 → +6\n\nA wall improves urban safety. The town remains in place by Year 10, but flanking erosion and habitat loss increase unless sand is actively moved. Very strong storms can still overtop sections."
           }
         ]
       }
@@ -204,289 +204,289 @@
     "3": {
       "aaa": {
         "image": "citizen_science.png",
-        "text": "Seagrass is recovering. How will you secure its long-term future?",
+        "text": "Seagrass, mangroves, and dunes are recovering. The community must decide how to keep them strong.",
         "options": [
           {
-            "desc": "Involve citizens in monitoring and care.",
+            "desc": "Encourage citizens to help with monitoring and care.",
             "target": "a",
-            "outcome": "Community science programs built stewardship and ensured ongoing recovery, though results depended on strong participation."
+            "outcome": "Year +6 → +8\n\nLocal people take part in protecting habitats, and recovery continues. By Year 10 the town avoids relocation, and natural systems provide strong defences. This pathway could protect the town for another 25–30 years beyond Year 10 before new actions are needed."
           },
           {
-            "desc": "Rely on professional teams only.",
+            "desc": "Rely only on professional teams.",
             "target": "b",
-            "outcome": "Experts kept habitats stable, but locals felt excluded, weakening long-term community support."
+            "outcome": "Year +6 → +8\n\nExperts manage the habitats, but the community feels less involved. By Year 10 the town still avoids relocation, but long-term commitment is weaker. This pathway may provide 15–20 more years of safety beyond Year 10 before sea levels rise too much."
           }
         ]
       },
       "aab": {
         "image": "expand.png",
-        "text": "Recovery has begun, but could be expanded. What\u2019s next?",
+        "text": "Recovery has begun, and the town can decide whether to scale it up.",
         "options": [
           {
             "desc": "Expand restoration zones and protect new areas.",
             "target": "a",
-            "outcome": "Broader restoration improved biodiversity and resilience, but required stricter rules and more funding."
+            "outcome": "Year +6 → +8\n\nWider habitat coverage spreads the benefits along the coast. By Year 10 the town avoids relocation, and this approach could add another 20–25 years of protection beyond Year 10 with steady maintenance."
           },
           {
-            "desc": "Transplant seagrass from other areas.",
+            "desc": "Use targeted seagrass transplants in key spots.",
             "target": "b",
-            "outcome": "Transplants boosted growth in key spots, but survival rates were low and donor areas weakened."
+            "outcome": "Year +6 → +8\n\nTransplants lift growth in important areas, although survival varies. By Year 10 the town remains safe, and this could add another 15–20 years beyond Year 10 if monitoring and care continue."
           }
         ]
       },
       "aac": {
         "image": "decline.png",
-        "text": "Unrestricted boating is causing decline. Do you act?",
+        "text": "Boating pressure is rising again, and seagrass beds are at risk of damage.",
         "options": [
           {
-            "desc": "Reintroduce restrictions quickly.",
+            "desc": "Reinstate strict boating limits and protect seagrass.",
             "target": "a",
-            "outcome": "Limits reduced damage and allowed partial recovery, but earlier losses were hard to reverse."
+            "outcome": "Year +6 → +8\n\nDamage slows and recovery resumes. By Year 10 the town remains safe, and with selective reinforcements this could add 12–18 more years beyond Year 10 before stronger actions are required."
           },
           {
-            "desc": "Ignore the issue.",
+            "desc": "Do nothing and hope natural recovery continues.",
             "target": "b",
-            "outcome": "Seagrass collapsed, reducing fish stocks and natural protection. The town became highly exposed."
+            "outcome": "Year +6 → +8\n\nSeagrass declines and water becomes murkier. The town can still be held by Year 10 using heavier engineering, but ecosystems suffer and costs rise. This route may only add 8–12 more years of protection beyond Year 10."
           }
         ]
       },
       "aba": {
         "image": "balance.png",
-        "text": "Artificial reefs are in place. How should the town support nature long-term?",
+        "text": "Artificial reefs are in place and the town is considering how to improve long-term balance.",
         "options": [
           {
-            "desc": "Pair reefs with habitat restoration projects.",
+            "desc": "Pair the reefs with mangrove, dune, and seagrass projects.",
             "target": "a",
-            "outcome": "By combining reefs with seagrass and mangroves, ecosystems became stronger and more resilient. But these projects demanded steady resources."
+            "outcome": "Year +6 → +8\n\nMixed natural and built solutions make protection more durable. By Year 10 the town stays safe, and this could add 15–20 extra years beyond Year 10 with steady care."
           },
           {
-            "desc": "Keep focusing only on reefs.",
+            "desc": "Keep focusing on reef modules alone.",
             "target": "b",
-            "outcome": "Fish remained around reefs, but natural habitats kept declining, leaving the coast vulnerable."
+            "outcome": "Year +6 → +8\n\nReefs help in normal conditions, but big storms still reach the shore. The town can be protected by Year 10 only with added engineering. This may add 10–15 years beyond Year 10 but with higher costs and weaker ecosystems."
           }
         ]
       },
       "abb": {
         "image": "marine_zone.png",
-        "text": "Protected areas improved fish stocks, but some fishers are unhappy. What now?",
+        "text": "Fish stocks improve in protected areas, but some fishers remain unhappy.",
         "options": [
           {
-            "desc": "Work with fishers to build alternative livelihoods.",
+            "desc": "Work with fishers on alternative jobs such as eco-tourism.",
             "target": "a",
-            "outcome": "Tensions eased as eco-tourism jobs and sustainable fishing opportunities grew, but the transition took effort."
+            "outcome": "Year +6 → +8\n\nTension eases and support for conservation grows. By Year 10 the town remains safe, and this could add 15–20 more years beyond Year 10 with community backing."
           },
           {
-            "desc": "Ignore their concerns.",
+            "desc": "Ignore complaints and continue strict enforcement.",
             "target": "b",
-            "outcome": "Conflict deepened, leading to protests and weakened support for conservation."
+            "outcome": "Year +6 → +8\n\nConflicts grow and some rules are ignored. The town stays safe by Year 10 through stronger engineering, but ecosystems decline faster. This may only add about 10–12 years beyond Year 10."
           }
         ]
       },
       "abc": {
         "image": "expensive.png",
-        "text": "Reef expansion helped but drained funds. How do you proceed?",
+        "text": "Budgets are tight and the town must choose how to spend limited funds.",
         "options": [
           {
-            "desc": "Pair reefs with cheaper nature-based methods.",
+            "desc": "Use cheaper nature-based additions with selective reinforcement.",
             "target": "a",
-            "outcome": "Mangroves and seagrass reduced costs and improved protection, though results were slower than reefs alone."
+            "outcome": "Year +6 → +8\n\nThis improves resilience for each dollar spent. By Year 10 the town remains safe, and this could add 15–20 years beyond Year 10 with steady upkeep."
           },
           {
-            "desc": "Keep funding reef expansion heavily.",
+            "desc": "Double down on additional reef modules.",
             "target": "b",
-            "outcome": "The town fell into debt maintaining artificial reefs, and projects collapsed when funding ran out."
+            "outcome": "Year +6 → +8\n\nMore modules bring limited gains in big storms. The town can stay safe by Year 10 only with extra engineering. This path may add 8–12 years beyond Year 10 and puts more pressure on ecosystems and budgets."
           }
         ]
       },
       "baa": {
-        "image": "storm_channel.png",
-        "text": "The upgraded sand channels are effective, but a powerful storm season is approaching. The town must prepare.",
+        "image": "relocation.png",
+        "text": "Exposure is still highest along the outer fringe of the coast.",
         "options": [
           {
-            "desc": "Reinforce channels and commit to heavy maintenance.",
+            "desc": "Relocate the outer fringe and expand natural buffers to protect the town core.",
             "target": "a",
-            "outcome": "Channels held through the storms, saving turtle nesting beaches, but the costs nearly bankrupted the town."
+            "outcome": "Year +6 → +8\n\nMoving the most exposed homes creates space for mangroves and dunes to grow. By Year 10 the town core stays safe, and this approach could add 20–25 years beyond Year 10 with lower emergency costs."
           },
           {
-            "desc": "Maintain only critical channels and let less vital areas erode.",
+            "desc": "Slow the relocation to reduce conflict and focus on holding the line.",
             "target": "b",
-            "outcome": "Some beaches survived, but secondary habitats eroded, weakening natural resilience for the future."
+            "outcome": "Year +6 → +8\n\nHomes remain in harm’s way for longer. The town can still stay safe by Year 10 with added hard structures and sand, but ecosystems decline and costs are higher. This may add 10–15 years beyond Year 10."
           }
         ]
       },
       "bab": {
-        "image": "sand_restore.png",
-        "text": "Combining relocation with restoration has shown promise, but requires scaling up.",
+        "image": "living_shoreline.png",
+        "text": "A hybrid plan is underway, using living shorelines and targeted sand placements.",
         "options": [
           {
-            "desc": "Expand restoration and continue relocation side by side.",
+            "desc": "Invest to scale the hybrid and add small hard structures where needed.",
             "target": "a",
-            "outcome": "The dual strategy slowed habitat loss, but long-term costs left the town financially unstable."
+            "outcome": "Year +6 → +8\n\nCoverage expands and waves are softened across more of the coast. By Year 10 the town stays safe, and this could add 15–20 years beyond Year 10 with ongoing maintenance."
           },
           {
-            "desc": "Cut restoration and rely only on relocation for speed.",
+            "desc": "Keep the plan small and rely on periodic nourishment.",
             "target": "b",
-            "outcome": "Relocation kept beaches wide, but without restoration, habitats collapsed, leaving the coast more exposed each year."
+            "outcome": "Year +6 → +8\n\nThe benefits remain local. The town can be held by Year 10 with extra engineering, but ecosystems are more stressed. This may add 10–12 years beyond Year 10."
           }
         ]
       },
       "bac": {
-        "image": "eroded_beach.png",
-        "text": "Where sand channels or relocation were abandoned, the seawall continued to block natural replenishment. Turtle nesting beaches and seagrass meadows are eroding rapidly; residents want a decision before the next storm season.",
+        "image": "habitat_restore.png",
+        "text": "A nature-only approach faces repeated tests during strong storm seasons.",
         "options": [
           {
-            "desc": "Launch emergency habitat restoration with sand bypass systems.",
+            "desc": "Double down on restoration and move the most exposed properties.",
             "target": "a",
-            "outcome": "Some habitats stabilised, but the fixes came too late to prevent major losses, and costs were extreme."
+            "outcome": "Year +6 → +8\n\nEcosystems keep improving and emergency losses fall. By Year 10 the town core stays safe, and this could add 18–22 years beyond Year 10 if planting continues."
           },
           {
-            "desc": "Accept the loss of habitats and maintain only hard defences.",
+            "desc": "Add minimal emergency barriers to hold the line during storms.",
             "target": "b",
-            "outcome": "The seawall protected the town for now, but without habitats, storms increasingly overtopped the wall, causing severe damage."
+            "outcome": "Year +6 → +8\n\nSelective structures reduce flood peaks. By Year 10 the town largely remains safe, and this may add 12–16 years beyond Year 10 with regular upkeep."
           }
         ]
       },
       "bba": {
-        "image": "levy.png",
-        "text": "Scaling up relocation has pushed costs to the limit. The town considers new funding mechanisms.",
+        "image": "sand_bypass.png",
+        "text": "Sand bypass systems are moving sand along the coast, but they need energy and maintenance.",
         "options": [
           {
-            "desc": "Introduce a visitor levy to fund coastal works.",
+            "desc": "Expand and modernise the bypass and support key habitat areas.",
             "target": "a",
-            "outcome": "The levy funded ongoing nourishment, but higher prices reduced tourist numbers and local businesses had to adapt."
+            "outcome": "Year +6 → +8\n\nSand delivery improves and important beaches stabilise. By Year 10 the town remains safe, and this could add 12–18 years beyond Year 10, though costs stay high."
           },
           {
-            "desc": "Cut public services to keep paying for nourishment.",
+            "desc": "Limit the bypass to the most critical sites.",
             "target": "b",
-            "outcome": "Nourishment continued for a time, but service cuts hurt residents, and a severe storm erased much of the beach in a single night."
+            "outcome": "Year +6 → +8\n\nKey beaches hold while others still erode. The town can remain safe by Year 10 with added hardening, and this may add 10–15 years beyond Year 10 with mixed ecosystem results."
           }
         ]
       },
       "bbb": {
-        "image": "community_restore.png",
-        "text": "Relocation and partial restoration are both underway, but budgets are thin and progress uneven.",
+        "image": "sand_trucks.png",
+        "text": "Regular sand placement offsets losses near the wall, but it must be repeated after storms.",
         "options": [
           {
-            "desc": "Shift restoration to a community-led model to lower costs.",
+            "desc": "Increase the amount and timing of sand placement.",
             "target": "a",
-            "outcome": "Community stewardship improved local buy-in and reduced expenses, yet full recovery still lagged behind storm impacts."
+            "outcome": "Year +6 → +8\n\nBeaches stay wider and tourism holds up. By Year 10 the town remains safe, but ecosystems are stressed and costs keep rising. This may add 10–12 years beyond Year 10 if funding continues."
           },
           {
-            "desc": "Pause restoration to prioritise relocation logistics.",
+            "desc": "Shift budget into living shorelines and use smaller, smarter placements.",
             "target": "b",
-            "outcome": "Beaches looked maintained, but without restoration the habitats declined, making each storm season more damaging."
+            "outcome": "Year +6 → +8\n\nDisturbance is lower and habitats gain ground. By Year 10 the town stays safe, and this could add 12–16 years beyond Year 10 with steady care."
           }
         ]
       },
       "bbc": {
-        "image": "living_shoreline.png",
-        "text": "With relocation phased out, the town tests other protections.",
+        "image": "lost_habitat.png",
+        "text": "Ecosystems have declined and seawall overtopping during severe storms is more frequent.",
         "options": [
           {
-            "desc": "Pilot a living shoreline using dunes, vegetation, and coir logs.",
+            "desc": "Raise and reinforce the wall and protect the base and ends.",
             "target": "a",
-            "outcome": "The living shoreline began to build natural resilience, but benefits accrued slowly compared to engineering fixes."
+            "outcome": "Year +6 → +8\n\nUrban safety improves and most waves are blocked. By Year 10 the town stays, but strong storms can still test the wall and ecosystems are heavily degraded. This may add 10–15 years beyond Year 10."
           },
           {
-            "desc": "Rely on seawall maintenance as the primary defence.",
+            "desc": "Begin a planned inland growth area and relocate over time.",
             "target": "b",
-            "outcome": "The seawall held for now, but without natural buffers, overtopping during extreme storms became more frequent and costly."
+            "outcome": "Year +6 → +8\n\nA structured retreat reduces long-term risk and allows shoreline habitats to recover. This choice is disruptive now but offers resilience for many decades beyond Year 10."
           }
         ]
       },
       "caa": {
         "image": "eco_guidelines.png",
-        "text": "Guidelines have reduced pressure on recovering seagrass and coral, but enforcing them is expensive and tourism operators are divided.",
+        "text": "Guidelines limit damage to recovering sites, but enforcement requires effort and funding.",
         "options": [
           {
-            "desc": "Keep strict rules and invest more in eco-management.",
+            "desc": "Keep strict rules and reinforce a few weak shoreline points.",
             "target": "a",
-            "outcome": "Tourism remained steady and habitats slowly strengthened into a natural barrier, but some businesses closed under the tighter restrictions."
+            "outcome": "Year +6 → +8\n\nSites cope better with heatwaves and visitor pressure. By Year 10 the town remains safe, and this could add 15–20 years beyond Year 10 with consistent enforcement."
           },
           {
-            "desc": "Relax guidelines to attract more visitors quickly.",
+            "desc": "Relax rules to attract more visitors quickly.",
             "target": "b",
-            "outcome": "Visitor numbers surged, increasing anchor damage and trampling. When marine heatwaves struck, stressed corals lacked resilience; coral cover declined and seagrass thinned, and erosion soon returned."
+            "outcome": "Year +6 → +8\n\nWear and tear increases and natural buffers weaken. The town can still be protected by Year 10 with heavier engineering, but ecosystems decline. This may add only 8–12 years beyond Year 10."
           }
         ]
       },
       "cab": {
         "image": "over_tourism.png",
-        "text": "Tourism was pushed too far, and recovering habitats are showing signs of stress. The town must decide how to respond.",
+        "text": "Over-tourism has begun to stress recovering habitats, and the town must respond.",
         "options": [
           {
-            "desc": "Reintroduce visitor limits and protect sensitive sites.",
+            "desc": "Re-introduce visitor limits and protect the most sensitive areas.",
             "target": "a",
-            "outcome": "Restrictions slowed the decline, but much of the earlier recovery was lost, leaving ecosystems weaker than before."
+            "outcome": "Year +6 → +8\n\nDecline slows and resilience returns. With a few reinforcements, the town remains safe by Year 10 and this can add 12–16 years beyond Year 10."
           },
           {
-            "desc": "Ignore warnings and continue expanding tourism.",
+            "desc": "Keep expanding visitor numbers and hope for the best.",
             "target": "b",
-            "outcome": "Tourism peaked briefly, but cumulative physical damage and subsequent heatwaves drove reef decline. With attractions degraded, visitors stopped coming."
+            "outcome": "Year +6 → +8\n\nImpacts build up and the coast becomes more fragile. The town can stay by Year 10 only with heavy engineering and high costs, adding about 8–10 years beyond Year 10."
           }
         ]
       },
       "cac": {
         "image": "hands_off.png",
-        "text": "Without clear management, some habitats thrived while others degraded. The uneven recovery left parts of the coastline vulnerable.",
+        "text": "With little management, some sites improve while others decline.",
         "options": [
           {
-            "desc": "Step in late with new protections to safeguard the stronger habitats.",
+            "desc": "Add protections for stronger sites and reinforce the most vulnerable gaps.",
             "target": "a",
-            "outcome": "The healthier sites were preserved, but weaker areas were lost, leaving a patchwork coast with mixed resilience."
+            "outcome": "Year +6 → +8\n\nHealthier areas hold while weaker spots get support. By Year 10 the town remains safe with added engineering, and this may add 10–15 years beyond Year 10."
           },
           {
-            "desc": "Continue leaving nature and tourism to balance themselves.",
+            "desc": "Continue the hands-off approach.",
             "target": "b",
-            "outcome": "Tourism pressures grew unchecked, and over time the fragile recovery collapsed, leaving the town exposed once again."
+            "outcome": "Year +6 → +8\n\nExposure grows and damage spreads. To keep the town by Year 10, heavy armouring and frequent nourishment are required, giving only about 8–12 more years beyond Year 10."
           }
         ]
       },
       "cba": {
         "image": "nature_shift.png",
-        "text": "Funds were shifted into seagrass and mangrove projects, but the transition away from nourishment slowed tourism.",
+        "text": "The town is moving funding from sand placement to habitat recovery.",
         "options": [
           {
-            "desc": "Stay committed to nature-based solutions despite the economic dip.",
+            "desc": "Stay the course on nature-based measures and reinforce weak points.",
             "target": "a",
-            "outcome": "Habitats strengthened into effective natural barriers over time, though the town endured lean years before stability returned."
+            "outcome": "Year +6 → +8\n\nHabitats strengthen and targeted structures close the gaps. By Year 10 the town remains safe, and this could add 15–20 years beyond Year 10."
           },
           {
-            "desc": "Return to sand nourishment to quickly boost tourism again.",
+            "desc": "Return to frequent sand nourishment for fast results.",
             "target": "b",
-            "outcome": "Tourism rebounded quickly, but ecosystems stalled. Without healthy vegetation and seagrass to bind sediments, erosion surged once funding lapsed, and beaches narrowed sharply."
+            "outcome": "Year +6 → +8\n\nBeaches widen again for a while, but dependency returns. The town can remain by Year 10; however, this may add only 8–12 years beyond Year 10 and ecosystems stay stressed."
           }
         ]
       },
       "cbb": {
         "image": "sand_only.png",
-        "text": "Ongoing sand nourishment kept tourists happy, but the costs kept climbing and the town\u2019s budget is stretched to breaking point.",
+        "text": "Relying only on sand nourishment is stretching budgets and stressing habitats.",
         "options": [
           {
-            "desc": "Shift late into hybrid protection (sand plus limited habitat restoration).",
+            "desc": "Shift to a hybrid plan with living shorelines and selective nourishment.",
             "target": "a",
-            "outcome": "Hybrid methods slowed erosion more effectively, but years of dependence on sand had already degraded ecosystems, limiting recovery."
+            "outcome": "Year +6 → +8\n\nErosion slows more effectively and costs are easier to plan. By Year 10 the town stays safe, and this can add 12–16 years beyond Year 10."
           },
           {
-            "desc": "Keep relying only on sand nourishment.",
+            "desc": "Keep using sand nourishment only.",
             "target": "b",
-            "outcome": "Funds eventually ran out, and without healthy habitats, the beaches eroded faster than they could be replaced. The coast was left bare."
+            "outcome": "Year +6 → +8\n\nThe town can remain by Year 10 if funding holds, but sustainability is weak and ecosystems remain stressed. This route may add only 8–10 years beyond Year 10."
           }
         ]
       },
       "cbc": {
         "image": "storm_wall.png",
-        "text": "The seawall gave the town short-term safety, but strong storms are now overtopping it. The community must decide what to do.",
+        "text": "Seawall overtopping during severe storms is more common, and choices are urgent.",
         "options": [
           {
-            "desc": "Invest in emergency reinforcements and higher walls.",
+            "desc": "Raise and armour the wall and improve the ends.",
             "target": "a",
-            "outcome": "The higher walls held for a while, but costs soared and each new storm tested their limits. Eventually, maintenance collapsed under pressure."
+            "outcome": "Year +6 → +8\n\nProtection improves and most waves are held back. By Year 10 the town stays, but the environment is heavily degraded and rare extreme storms can still cause damage. This may add 10–15 years beyond Year 10."
           },
           {
-            "desc": "Accept retreat and begin relocating inland.",
+            "desc": "Start a structured managed retreat to a safer inland area.",
             "target": "b",
-            "outcome": "Relocation was painful and costly, but it gave the community a long-term solution. The original shoreline was abandoned to the sea."
+            "outcome": "Year +6 → +8\n\nRelocating over time lowers long-term risk and lets shore habitats recover. This choice is disruptive now but can provide stable resilience for many decades beyond Year 10."
           }
         ]
       }
