@@ -8,7 +8,7 @@
           {
             "desc": "Survey local habitats and plan ecosystem protection as a natural defence.",
             "target": "a",
-            "outcome": "Year +0 → +2\n\nYour surveys reveal damage to seagrass meadows, mangroves, and coral reefs. Protecting these ecosystems could allow natural recovery and strengthen coastal defences, though progress will take time. The community must now decide whether to rely on protection alone or add artificial structures for faster results."
+            "outcome": "Year +0 → +2\n\nYour surveys reveal damage done by human activity to seagrass meadows, mangroves, and coral reefs. Protecting these ecosystems could allow natural recovery and strengthen coastal defences, though progress will take time. The community must now decide whether to rely on protection alone or add artificial structures for faster results."
           },
           {
             "desc": "Consider building a seawall to defend the town from rising seas and erosion.",
@@ -149,7 +149,7 @@
           {
             "desc": "Schedule regular sand nourishment around the seawall.",
             "target": "b",
-            "outcome": "Year +4 → +6\n\nNew sand keeps beaches wider for a time. The town is safe by Year 10, but budgets are stretched and ecosystems remain under pressure from constant works."
+            "outcome": "Year +4 → +6\n\n Sand nourishment slows down the erosion of beaches further up the coast, reducing the risk on turtles. The town is safe by Year 10, but budgets are stretched and ecosystems remain under pressure from constant works."
           },
           {
             "desc": "Focus on the wall’s integrity and accept ecosystem losses.",
