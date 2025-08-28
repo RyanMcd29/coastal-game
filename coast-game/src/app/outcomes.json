@@ -8,7 +8,7 @@
       "caaa",
       "cbaa"
     ],
-    "image": "",
+    "image": "good.png",
     "text": "You chose actions that protected people and helped ecosystems recover. The town stays safe without major relocation, and nature keeps building long-term resilience. Great work!"
   },
   "good_neutral": {
@@ -25,7 +25,7 @@
       "caba",
       "cbba"
     ],
-    "image": "",
+    "image": "good_neutral.png",
     "text": "Your plan balanced safety and nature. The town is protected and ecosystems improved in places, but costs, enforcement, or technology needs kept it just short of the best outcome. Solid work!"
   },
   "bad_neutral": {
@@ -37,7 +37,7 @@
       "caca",
       "cbca"
     ],
-    "image": "",
+    "image": "bad_neutral.png",
     "text": "You delivered short\u2011term benefits, but important actions came late or at too small a scale. The coast remains vulnerable to future storms unless stronger steps are taken. Keep going\u2014there\u2019s a clear path to improve."
   },
   "bad": {
@@ -56,7 +56,7 @@
       "cbbb",
       "cbcb"
     ],
-    "image": "",
+    "image": "bad.png",
     "text": "Your choices favoured quick fixes or convenience. Budgets were stretched, habitats declined, and erosion worsened, putting the town\u2019s future at risk. Reflect on trade\u2011offs and try again."
   }
 }

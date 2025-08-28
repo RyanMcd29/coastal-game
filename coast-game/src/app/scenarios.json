@@ -117,7 +117,7 @@
         ]
       },
       "ba": {
-        "image": "erosion.png",
+        "image": "eroded_beach.png",
         "text": "Storm clusters accelerate erosion and expose homes along the most at-risk fringe.",
         "options": [
           {
@@ -219,7 +219,7 @@
         ]
       },
       "aab": {
-        "image": "expand.png",
+        "image": "seagrass.png",
         "text": "Ecosystem recovery has begun. The town can either focus resources on key hotspots or attempt a large expansion.",
         "options": [
           {
@@ -283,7 +283,7 @@
         ]
       },
       "abc": {
-        "image": "expensive.png",
+        "image": "art_reef.png",
         "text": "Budgets are tight, and decisions about how to fund coastal protection have been delayed. The town must now decide how to respond as erosion worsens.",
         "options": [
           {
@@ -315,7 +315,7 @@
         ]
       },
       "bab": {
-        "image": "living_shoreline.png",
+        "image": "relocation.png",
         "text": "A hybrid plan is underway, using living shorelines and targeted sand placements.",
         "options": [
           {
@@ -363,7 +363,7 @@
         ]
       },
       "bbb": {
-        "image": "sand_trucks.png",
+        "image": "sand_transport.png",
         "text": "Regular sand placement offsets losses near the wall, but it must be repeated after storms.",
         "options": [
           {
@@ -379,7 +379,7 @@
         ]
       },
       "bbc": {
-        "image": "lost_habitat.png",
+        "image": "storm_wall.png",
         "text": "Ecosystems have declined and seawall overtopping during severe storms is more frequent.",
         "options": [
           {
@@ -395,7 +395,7 @@
         ]
       },
       "caa": {
-        "image": "eco_guidelines.png",
+        "image": "marine_zone.png",
         "text": "Guidelines limit damage to recovering sites, but enforcement requires effort and funding.",
         "options": [
           {
@@ -411,7 +411,7 @@
         ]
       },
       "cab": {
-        "image": "over_tourism.png",
+        "image": "beach.png",
         "text": "Over-tourism has begun to stress recovering habitats, and the town must respond.",
         "options": [
           {
@@ -427,7 +427,7 @@
         ]
       },
       "cac": {
-        "image": "hands_off.png",
+        "image": "eroded_beach.png",
         "text": "With little management, some sites improve while others decline.",
         "options": [
           {
@@ -443,7 +443,7 @@
         ]
       },
       "cba": {
-        "image": "nature_shift.png",
+        "image": "seagrass.png",
         "text": "The town is moving funding from sand placement to habitat recovery.",
         "options": [
           {
