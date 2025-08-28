@@ -2,6 +2,7 @@
 import Start from '@/Components/start';
 import Game from '../Components/game';
 import Leaderboard from '../Components/leaderboard';
+import Credits from '@/Components/credits';
 import { useState } from 'react';
 
 export default function Home() {
@@ -16,6 +17,9 @@ export default function Home() {
       )}
       {page === 'leaderboard' && (
         <Leaderboard setPage={setPage} />
+      )}
+      {page === 'credits' && (
+        <Credits setPage={setPage} />
       )}
     </div>
   );
