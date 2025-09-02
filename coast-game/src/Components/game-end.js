@@ -53,7 +53,7 @@ export default function GameEnd({ path, setPage, outcome }) {
             <div className="image-container mx-auto my-auto p-4 w-2/5">
                 <Image 
                     className="mx-auto my-auto max-sm:48 image-fit aspect-square object-cover" 
-                    src={`scenario_images/${endtext.image}`} 
+                    src={`outcome_images/${endtext.image}`} 
                     alt="scenario image" 
                     width={1000} 
                     height={1000}
